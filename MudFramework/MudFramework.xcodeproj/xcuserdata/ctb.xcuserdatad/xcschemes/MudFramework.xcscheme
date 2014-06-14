@@ -20,6 +20,20 @@
                ReferencedContainer = "container:MudFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "64D076511949C5FE001CF5D3"
+               BuildableName = "MudFrameworkTests.xctest"
+               BlueprintName = "MudFrameworkTests"
+               ReferencedContainer = "container:MudFramework.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

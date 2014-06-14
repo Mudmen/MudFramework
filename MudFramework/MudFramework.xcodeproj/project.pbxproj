@@ -73,6 +73,7 @@
 		64D07756194CBAAD001CF5D3 /* MudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D07716194CBAAD001CF5D3 /* MudViewController.m */; };
 		64D07757194CBAAD001CF5D3 /* MudFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07717194CBAAD001CF5D3 /* MudFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D07758194CBAAD001CF5D3 /* CommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07719194CBAAD001CF5D3 /* CommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64D0775F194CC5DE001CF5D3 /* MudFramework类文档.doc in Resources */ = {isa = PBXBuildFile; fileRef = 64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +148,7 @@
 		64D07716194CBAAD001CF5D3 /* MudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudViewController.m; sourceTree = "<group>"; };
 		64D07717194CBAAD001CF5D3 /* MudFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudFramework.h; sourceTree = "<group>"; };
 		64D07719194CBAAD001CF5D3 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MudFramework类文档.doc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,10 +200,11 @@
 		64D076471949C5FE001CF5D3 /* MudFramework */ = {
 			isa = PBXGroup;
 			children = (
+				64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */,
+				64D07717194CBAAD001CF5D3 /* MudFramework.h */,
 				64D076D1194CBAAD001CF5D3 /* Mud Foundation */,
 				64D076E4194CBAAD001CF5D3 /* Mud Request */,
 				64D076EA194CBAAD001CF5D3 /* Mud UIKit */,
-				64D07717194CBAAD001CF5D3 /* MudFramework.h */,
 				64D07718194CBAAD001CF5D3 /* MudMacro */,
 				64D076481949C5FE001CF5D3 /* Supporting Files */,
 			);
@@ -499,6 +502,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D0775F194CC5DE001CF5D3 /* MudFramework类文档.doc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
