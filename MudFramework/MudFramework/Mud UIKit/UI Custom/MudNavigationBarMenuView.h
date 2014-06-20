@@ -11,6 +11,7 @@
 @protocol MudNavigationBarMenuViewDelegate;
 @interface MudNavigationBarMenuView : UIView
 
+//菜单列表，每行的标题
 @property (nonatomic,retain) NSArray *menuArray;
 @property (nonatomic,assign) id <MudNavigationBarMenuViewDelegate> delegate;
 

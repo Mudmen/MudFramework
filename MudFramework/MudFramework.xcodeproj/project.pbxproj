@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		647FAB7C19519767004AA067 /* MudDisplayTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 647FAB7A19519767004AA067 /* MudDisplayTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		647FAB7D19519767004AA067 /* MudDisplayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647FAB7B19519767004AA067 /* MudDisplayTableViewController.m */; };
 		64D076551949C5FE001CF5D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D076451949C5FE001CF5D3 /* Foundation.framework */; };
 		64D076601949C5FE001CF5D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64D0765E1949C5FE001CF5D3 /* InfoPlist.strings */; };
 		64D076621949C5FE001CF5D3 /* MudFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D076611949C5FE001CF5D3 /* MudFrameworkTests.m */; };
@@ -74,9 +76,17 @@
 		64D07757194CBAAD001CF5D3 /* MudFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07717194CBAAD001CF5D3 /* MudFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D07758194CBAAD001CF5D3 /* CommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07719194CBAAD001CF5D3 /* CommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D0775F194CC5DE001CF5D3 /* MudFramework类文档.doc in Resources */ = {isa = PBXBuildFile; fileRef = 64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */; };
+		64F525641952CE2C002018A4 /* MudItemsBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525621952CE2C002018A4 /* MudItemsBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64F525651952CE2C002018A4 /* MudItemsBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F525631952CE2C002018A4 /* MudItemsBar.m */; };
+		64F5256A1952D9A2002018A4 /* MudItemBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525681952D9A2002018A4 /* MudItemBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64F5256B1952D9A2002018A4 /* MudItemBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F525691952D9A2002018A4 /* MudItemBarItem.m */; };
+		64F525721953081F002018A4 /* UIView+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525701953081F002018A4 /* UIView+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64F525731953081F002018A4 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F525711953081F002018A4 /* UIView+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		647FAB7A19519767004AA067 /* MudDisplayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudDisplayTableViewController.h; sourceTree = "<group>"; };
+		647FAB7B19519767004AA067 /* MudDisplayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudDisplayTableViewController.m; sourceTree = "<group>"; };
 		64D076451949C5FE001CF5D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		64D076491949C5FE001CF5D3 /* MudFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MudFramework-Prefix.pch"; sourceTree = "<group>"; };
 		64D076521949C5FE001CF5D3 /* MudFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +159,12 @@
 		64D07717194CBAAD001CF5D3 /* MudFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudFramework.h; sourceTree = "<group>"; };
 		64D07719194CBAAD001CF5D3 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MudFramework类文档.doc"; sourceTree = "<group>"; };
+		64F525621952CE2C002018A4 /* MudItemsBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudItemsBar.h; sourceTree = "<group>"; };
+		64F525631952CE2C002018A4 /* MudItemsBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudItemsBar.m; sourceTree = "<group>"; };
+		64F525681952D9A2002018A4 /* MudItemBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudItemBarItem.h; sourceTree = "<group>"; };
+		64F525691952D9A2002018A4 /* MudItemBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudItemBarItem.m; sourceTree = "<group>"; };
+		64F525701953081F002018A4 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		64F525711953081F002018A4 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				64D076EE194CBAAD001CF5D3 /* MudCategory.h */,
+				64F525701953081F002018A4 /* UIView+Category.h */,
+				64F525711953081F002018A4 /* UIView+Category.m */,
 				64D076EF194CBAAD001CF5D3 /* UIBarButtonItem+Extension.h */,
 				64D076F0194CBAAD001CF5D3 /* UIBarButtonItem+Extension.m */,
 				64D076F1194CBAAD001CF5D3 /* UIColor+Extension.h */,
@@ -338,6 +356,12 @@
 				64D07700194CBAAD001CF5D3 /* MudPickerTextField.m */,
 				64D07701194CBAAD001CF5D3 /* MudStarView.h */,
 				64D07702194CBAAD001CF5D3 /* MudStarView.m */,
+				647FAB7A19519767004AA067 /* MudDisplayTableViewController.h */,
+				647FAB7B19519767004AA067 /* MudDisplayTableViewController.m */,
+				64F525621952CE2C002018A4 /* MudItemsBar.h */,
+				64F525631952CE2C002018A4 /* MudItemsBar.m */,
+				64F525681952D9A2002018A4 /* MudItemBarItem.h */,
+				64F525691952D9A2002018A4 /* MudItemBarItem.m */,
 			);
 			path = "UI Custom";
 			sourceTree = "<group>";
@@ -416,9 +440,13 @@
 				64D07758194CBAAD001CF5D3 /* CommonMacro.h in Headers */,
 				64D0773D194CBAAD001CF5D3 /* MudCustomUI.h in Headers */,
 				64D07755194CBAAD001CF5D3 /* MudViewController.h in Headers */,
+				647FAB7C19519767004AA067 /* MudDisplayTableViewController.h in Headers */,
+				64F5256A1952D9A2002018A4 /* MudItemBarItem.h in Headers */,
 				64D0771B194CBAAD001CF5D3 /* NSArray+Extension.h in Headers */,
 				64D07753194CBAAD001CF5D3 /* MudToolBar.h in Headers */,
+				64F525641952CE2C002018A4 /* MudItemsBar.h in Headers */,
 				64D0773B194CBAAD001CF5D3 /* UIView+Toast.h in Headers */,
+				64F525721953081F002018A4 /* UIView+Category.h in Headers */,
 				64D07733194CBAAD001CF5D3 /* UIColor+Extension.h in Headers */,
 				64D07723194CBAAD001CF5D3 /* FirstResponderDelegate.h in Headers */,
 			);
@@ -532,16 +560,20 @@
 				64D07756194CBAAD001CF5D3 /* MudViewController.m in Sources */,
 				64D07754194CBAAD001CF5D3 /* MudToolBar.m in Sources */,
 				64D07752194CBAAD001CF5D3 /* MudTextView.m in Sources */,
+				647FAB7D19519767004AA067 /* MudDisplayTableViewController.m in Sources */,
 				64D07750194CBAAD001CF5D3 /* MudTableViewController.m in Sources */,
+				64F525651952CE2C002018A4 /* MudItemsBar.m in Sources */,
 				64D07734194CBAAD001CF5D3 /* UIColor+Extension.m in Sources */,
 				64D07732194CBAAD001CF5D3 /* UIBarButtonItem+Extension.m in Sources */,
 				64D0773C194CBAAD001CF5D3 /* UIView+Toast.m in Sources */,
 				64D07720194CBAAD001CF5D3 /* NSDictionary+Extension.m in Sources */,
 				64D07747194CBAAD001CF5D3 /* MudNavigationBar.m in Sources */,
 				64D07741194CBAAD001CF5D3 /* MudPickerTextField.m in Sources */,
+				64F5256B1952D9A2002018A4 /* MudItemBarItem.m in Sources */,
 				64D0774D194CBAAD001CF5D3 /* MudSearchBar.m in Sources */,
 				64D0772A194CBAAD001CF5D3 /* MudRequest.m in Sources */,
 				64D07727194CBAAD001CF5D3 /* MudMutableArray.m in Sources */,
+				64F525731953081F002018A4 /* UIView+Category.m in Sources */,
 				64D07749194CBAAD001CF5D3 /* MudNavigationViewController.m in Sources */,
 				64D0774B194CBAAD001CF5D3 /* MudPickerView.m in Sources */,
 				64D07736194CBAAD001CF5D3 /* UIImage+Resize.m in Sources */,

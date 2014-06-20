@@ -12,5 +12,8 @@
 #import "MudPickerTextField.h"
 #import "MudStarView.h"
 #import "MudNavigationBarMenuView.h"
+#import "MudDisplayTableViewController.h"
+#import "MudItemsBar.h"
+#import "MudItemBarItem.h"
 
 #endif

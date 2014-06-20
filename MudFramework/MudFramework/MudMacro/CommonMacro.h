@@ -57,7 +57,7 @@ static NSString * const urlname = @""#url;
 
 #pragma mark -------------------- Color -------------------------------------------------------
 
-#define VIEWCONTROLLER_BACKGROUNDCOLOR (0x5275c6)
+#define VIEWCONTROLLER_BACKGROUNDCOLOR (0xefeff4)
 
 #pragma mark ---------------------- frame ,bounds ---------------------------------------------
 #define SELF_VIEW_BOUNDS_WIDTH   self.view.bounds.size.width

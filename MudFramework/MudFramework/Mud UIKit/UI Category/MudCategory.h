@@ -15,5 +15,6 @@
 #import "UIView+Toast.h"
 #import "UITableViewHeaderFooterView+Extension.h"
 #import "UITableViewCell+Exension.h"
+#import "UIView+Category.h"
 
 #endif
