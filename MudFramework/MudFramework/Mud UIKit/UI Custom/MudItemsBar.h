@@ -21,20 +21,17 @@ typedef NS_ENUM(NSInteger, MudItemsBarAnimation) {
     MudItemsBarAnimationNone,
 };
 
-
 @protocol MudItemsBarDelegate;
 @interface MudItemsBar : NSObject
 
-//自己创建要显示的MudItemBarItem ,然后放到这个数组里. 跟tabbar类似
-@property (nonatomic,copy) NSArray *items;
-
-@property (nonatomic,retain) UIColor *backgroundColor;  //default is white color
-
-@property(nonatomic) MudItemsBarSeparatorStyle separatorStyle;   // default is UITableViewCellSeparatorStyleSingleLine
-@property(nonatomic,retain) UIColor               *separatorColor;   // default is the standard separator gray
 @property(nonatomic) BOOL translucentMask;  //default is YES
-@property(nonatomic,readonly) BOOL hidden;
-@property(nonatomic) CGFloat duration;
+@property(nonatomic,readonly) BOOL isHidden;
+@property(nonatomic) CGFloat duration;  //动画时间
+@property(nonatomic) CGPoint barOrigin; //工具条的起始位置
+@property(nonatomic) MudItemsBarSeparatorStyle separatorStyle;       // default is UITableViewCellSeparatorStyleSingleLine
+@property(nonatomic,retain)    UIColor *separatorColor;             // default is the standard separator gray
+@property (nonatomic,copy)     NSArray *items;                           //items only can be MudItemBarItems
+@property (nonatomic,retain)   UIColor *backgroundColor;               //default is white color
 
 //如果你有为你的MudItemBarItem添加响应事件，那你不需要设置代理。
 //如果你没有为MudItemBarItem添加响应事件，那么你设置这个delegate, 有item按下的时候，就会有回调。
@@ -50,5 +47,15 @@ typedef NS_ENUM(NSInteger, MudItemsBarAnimation) {
 
 //Item 点击的回调
 - (void)itemsBar:(MudItemsBar *)itemsBar clickedButtonAtIndex:(NSInteger)buttonIndex;
+- (void)itemsBarWillDisAppear;
 
+@end
+
+
+@protocol MudItemsBarMaskDelegate <NSObject>
+- (void)didTouches:(NSSet *)touches withEvent:(UIEvent *)event;
+@end
+
+@interface MudItemsBarMask : UIControl
+@property (nonatomic,assign) id <MudItemsBarMaskDelegate> delegate;
 @end

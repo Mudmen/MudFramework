@@ -83,6 +83,9 @@
 
 #pragma mark Public API
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.hiddenTabBarWhenPush == YES) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.navigationController.interactivePopGestureRecognizer.delegate = nil;
     }
@@ -99,6 +102,13 @@
 
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
     [super dismissViewControllerAnimated:flag completion:completion];
+}
+
+- (BOOL)isSearchResultsTableView:(UITableView *)tableView {
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return YES;
+    }
+    return NO;
 }
 
 #pragma mark - Pvivate API

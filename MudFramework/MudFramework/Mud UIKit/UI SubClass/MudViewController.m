@@ -99,6 +99,9 @@
 
 #pragma mark Public API
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.hiddenTabBarWhenPush == YES) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
            self.navigationController.interactivePopGestureRecognizer.delegate = nil;
     }

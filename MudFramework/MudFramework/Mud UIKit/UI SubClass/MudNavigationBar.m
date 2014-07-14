@@ -30,7 +30,7 @@
                 frame.origin.x = 0.f;
                 frame.origin.y = 0.f;
             }else{
-                frame.origin.x = 320 -45;
+                frame.origin.x = 320 -60;
                 frame.origin.y = 0.f;
             }
             view.frame = frame;

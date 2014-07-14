@@ -10,11 +10,15 @@
 
 @interface MudDisplayTableViewController : UITableViewController
 
+@property (nonatomic) BOOL hiddenTabBarWhenPush;
+
 //视图数据的操作， initView 和 initData在 viewdidload中已经调用了，子类中只需要实现这两个方法就好
 - (void)initView;
 - (void)refreshView;
 - (void)initData;
 - (void)refreshData;
+
+- (BOOL)isSearchResultsTableView:(UITableView *)tableView;
 
 //相当于self.navigationviewcontroller push的功能
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
