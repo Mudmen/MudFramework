@@ -76,6 +76,8 @@
 		64D07757194CBAAD001CF5D3 /* MudFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07717194CBAAD001CF5D3 /* MudFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D07758194CBAAD001CF5D3 /* CommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07719194CBAAD001CF5D3 /* CommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D0775F194CC5DE001CF5D3 /* MudFramework类文档.doc in Resources */ = {isa = PBXBuildFile; fileRef = 64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */; };
+		64E71D2C197E7ADE005F6619 /* UIDevice+OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E71D2A197E7ADE005F6619 /* UIDevice+OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64E71D2D197E7ADE005F6619 /* UIDevice+OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E71D2B197E7ADE005F6619 /* UIDevice+OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		64F525641952CE2C002018A4 /* MudItemsBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525621952CE2C002018A4 /* MudItemsBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64F525651952CE2C002018A4 /* MudItemsBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F525631952CE2C002018A4 /* MudItemsBar.m */; };
 		64F5256A1952D9A2002018A4 /* MudItemBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525681952D9A2002018A4 /* MudItemBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -159,6 +161,8 @@
 		64D07717194CBAAD001CF5D3 /* MudFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudFramework.h; sourceTree = "<group>"; };
 		64D07719194CBAAD001CF5D3 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MudFramework类文档.doc"; sourceTree = "<group>"; };
+		64E71D2A197E7ADE005F6619 /* UIDevice+OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+OpenUDID.h"; sourceTree = "<group>"; };
+		64E71D2B197E7ADE005F6619 /* UIDevice+OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+OpenUDID.m"; sourceTree = "<group>"; };
 		64F525621952CE2C002018A4 /* MudItemsBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudItemsBar.h; sourceTree = "<group>"; };
 		64F525631952CE2C002018A4 /* MudItemsBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudItemsBar.m; sourceTree = "<group>"; };
 		64F525681952D9A2002018A4 /* MudItemBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudItemBarItem.h; sourceTree = "<group>"; };
@@ -342,6 +346,8 @@
 				64D076F8194CBAAD001CF5D3 /* UITableViewHeaderFooterView+Extension.m */,
 				64D076F9194CBAAD001CF5D3 /* UIView+Toast.h */,
 				64D076FA194CBAAD001CF5D3 /* UIView+Toast.m */,
+				64E71D2A197E7ADE005F6619 /* UIDevice+OpenUDID.h */,
+				64E71D2B197E7ADE005F6619 /* UIDevice+OpenUDID.m */,
 			);
 			path = "UI Category";
 			sourceTree = "<group>";
@@ -443,6 +449,7 @@
 				647FAB7C19519767004AA067 /* MudDisplayTableViewController.h in Headers */,
 				64F5256A1952D9A2002018A4 /* MudItemBarItem.h in Headers */,
 				64D0771B194CBAAD001CF5D3 /* NSArray+Extension.h in Headers */,
+				64E71D2C197E7ADE005F6619 /* UIDevice+OpenUDID.h in Headers */,
 				64D07753194CBAAD001CF5D3 /* MudToolBar.h in Headers */,
 				64F525641952CE2C002018A4 /* MudItemsBar.h in Headers */,
 				64D0773B194CBAAD001CF5D3 /* UIView+Toast.h in Headers */,
@@ -550,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D07738194CBAAD001CF5D3 /* UITableViewCell+Exension.m in Sources */,
+				64E71D2D197E7ADE005F6619 /* UIDevice+OpenUDID.m in Sources */,
 				64D0771E194CBAAD001CF5D3 /* NSDate+Conversion.m in Sources */,
 				64D0773A194CBAAD001CF5D3 /* UITableViewHeaderFooterView+Extension.m in Sources */,
 				64D07743194CBAAD001CF5D3 /* MudStarView.m in Sources */,
