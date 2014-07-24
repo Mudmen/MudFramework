@@ -10,6 +10,12 @@
 
 @implementation UIApplication (Version)
 
++ (NSString *)currentVersion {
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *currentVersion = [infoDic objectForKey:@"CFBundleVersion"];
+    return currentVersion;
+}
+
 + (void)checkNewVersionWithAppleID:(NSString *)appleid handler:(ApplicaionVersionHandler)handler {
     
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
@@ -28,7 +34,7 @@
             if ([infoArray count]) {
                 NSDictionary *releaseInfo = [infoArray objectAtIndex:0];
                 NSString *lastVersion = [releaseInfo objectForKey:@"version"];
-                NSURL *updateURL = [releaseInfo objectForKey:@"trackViewUrl"];
+                __block NSURL *updateURL = [NSURL URLWithString:[releaseInfo objectForKey:@"trackViewUrl"]];
                 if (![lastVersion isEqualToString:currentVersion]) {
                     handler(YES,updateURL);
                 }
