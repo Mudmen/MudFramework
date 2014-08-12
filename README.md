@@ -1,7 +1,11 @@
 MudFramework
 ============
 
-一个iOS SDK 扩展框架
+一个iOS SDK 扩展框架 <br/>
+框架中包含：<br/>
+* 1.Mudmen常用到的一些自定义控件 
+* 2.对原有框架的一些扩展 比如UIApplication,UIDevice 等。
+* 3.对一些ViewController的子类化，在子类中封装了一些常用接口。
 
 使用方式
 ============
