@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64073EB4199784BD001CCE27 /* NSError+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64073EB2199784BD001CCE27 /* NSError+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64073EB5199784BD001CCE27 /* NSError+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64073EB3199784BD001CCE27 /* NSError+Extension.m */; };
 		647FAB7C19519767004AA067 /* MudDisplayTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 647FAB7A19519767004AA067 /* MudDisplayTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		647FAB7D19519767004AA067 /* MudDisplayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647FAB7B19519767004AA067 /* MudDisplayTableViewController.m */; };
+		64905D511990B946005CAD28 /* UIApplication+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64905D4F1990B946005CAD28 /* UIApplication+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64905D521990B946005CAD28 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64905D501990B946005CAD28 /* UIApplication+Extension.m */; };
+		64956A6219837C0800F80A6E /* MudTabPagesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64956A6019837C0800F80A6E /* MudTabPagesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64956A6319837C0800F80A6E /* MudTabPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64956A6119837C0800F80A6E /* MudTabPagesView.m */; };
+		64956A6619837D4700F80A6E /* MudTabPageBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64956A6419837D4700F80A6E /* MudTabPageBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64956A6719837D4700F80A6E /* MudTabPageBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 64956A6519837D4700F80A6E /* MudTabPageBar.m */; };
+		64956A6A19837FDE00F80A6E /* MudTabPageBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 64956A6819837FDE00F80A6E /* MudTabPageBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64956A6B19837FDE00F80A6E /* MudTabPageBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 64956A6919837FDE00F80A6E /* MudTabPageBarItem.m */; };
+		64959F8A198BE6BF00984DC9 /* UIDevice+Exension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64959F88198BE6BF00984DC9 /* UIDevice+Exension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64959F8B198BE6BF00984DC9 /* UIDevice+Exension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64959F89198BE6BF00984DC9 /* UIDevice+Exension.m */; };
 		64D076551949C5FE001CF5D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D076451949C5FE001CF5D3 /* Foundation.framework */; };
 		64D076601949C5FE001CF5D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64D0765E1949C5FE001CF5D3 /* InfoPlist.strings */; };
 		64D076621949C5FE001CF5D3 /* MudFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D076611949C5FE001CF5D3 /* MudFrameworkTests.m */; };
@@ -75,9 +87,8 @@
 		64D07756194CBAAD001CF5D3 /* MudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D07716194CBAAD001CF5D3 /* MudViewController.m */; };
 		64D07757194CBAAD001CF5D3 /* MudFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07717194CBAAD001CF5D3 /* MudFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D07758194CBAAD001CF5D3 /* CommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07719194CBAAD001CF5D3 /* CommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64D0775F194CC5DE001CF5D3 /* MudFramework类文档.doc in Resources */ = {isa = PBXBuildFile; fileRef = 64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */; };
-		64E71D2C197E7ADE005F6619 /* UIDevice+OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E71D2A197E7ADE005F6619 /* UIDevice+OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64E71D2D197E7ADE005F6619 /* UIDevice+OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E71D2B197E7ADE005F6619 /* UIDevice+OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		64E71D22197E4950005F6619 /* UIDevice+OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E71D20197E4950005F6619 /* UIDevice+OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64E71D23197E4950005F6619 /* UIDevice+OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E71D21197E4950005F6619 /* UIDevice+OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		64F525641952CE2C002018A4 /* MudItemsBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525621952CE2C002018A4 /* MudItemsBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64F525651952CE2C002018A4 /* MudItemsBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F525631952CE2C002018A4 /* MudItemsBar.m */; };
 		64F5256A1952D9A2002018A4 /* MudItemBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525681952D9A2002018A4 /* MudItemBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -87,8 +98,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64073EB2199784BD001CCE27 /* NSError+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extension.h"; sourceTree = "<group>"; };
+		64073EB3199784BD001CCE27 /* NSError+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Extension.m"; sourceTree = "<group>"; };
 		647FAB7A19519767004AA067 /* MudDisplayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudDisplayTableViewController.h; sourceTree = "<group>"; };
 		647FAB7B19519767004AA067 /* MudDisplayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudDisplayTableViewController.m; sourceTree = "<group>"; };
+		64905D4F1990B946005CAD28 /* UIApplication+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extension.h"; sourceTree = "<group>"; };
+		64905D501990B946005CAD28 /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
+		64956A6019837C0800F80A6E /* MudTabPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudTabPagesView.h; sourceTree = "<group>"; };
+		64956A6119837C0800F80A6E /* MudTabPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudTabPagesView.m; sourceTree = "<group>"; };
+		64956A6419837D4700F80A6E /* MudTabPageBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudTabPageBar.h; sourceTree = "<group>"; };
+		64956A6519837D4700F80A6E /* MudTabPageBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudTabPageBar.m; sourceTree = "<group>"; };
+		64956A6819837FDE00F80A6E /* MudTabPageBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudTabPageBarItem.h; sourceTree = "<group>"; };
+		64956A6919837FDE00F80A6E /* MudTabPageBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudTabPageBarItem.m; sourceTree = "<group>"; };
+		64959F88198BE6BF00984DC9 /* UIDevice+Exension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Exension.h"; sourceTree = "<group>"; };
+		64959F89198BE6BF00984DC9 /* UIDevice+Exension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Exension.m"; sourceTree = "<group>"; };
 		64D076451949C5FE001CF5D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		64D076491949C5FE001CF5D3 /* MudFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MudFramework-Prefix.pch"; sourceTree = "<group>"; };
 		64D076521949C5FE001CF5D3 /* MudFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,9 +183,8 @@
 		64D07716194CBAAD001CF5D3 /* MudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudViewController.m; sourceTree = "<group>"; };
 		64D07717194CBAAD001CF5D3 /* MudFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudFramework.h; sourceTree = "<group>"; };
 		64D07719194CBAAD001CF5D3 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
-		64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MudFramework类文档.doc"; sourceTree = "<group>"; };
-		64E71D2A197E7ADE005F6619 /* UIDevice+OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+OpenUDID.h"; sourceTree = "<group>"; };
-		64E71D2B197E7ADE005F6619 /* UIDevice+OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+OpenUDID.m"; sourceTree = "<group>"; };
+		64E71D20197E4950005F6619 /* UIDevice+OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+OpenUDID.h"; sourceTree = "<group>"; };
+		64E71D21197E4950005F6619 /* UIDevice+OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+OpenUDID.m"; sourceTree = "<group>"; };
 		64F525621952CE2C002018A4 /* MudItemsBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudItemsBar.h; sourceTree = "<group>"; };
 		64F525631952CE2C002018A4 /* MudItemsBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudItemsBar.m; sourceTree = "<group>"; };
 		64F525681952D9A2002018A4 /* MudItemBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudItemBarItem.h; sourceTree = "<group>"; };
@@ -220,7 +242,6 @@
 		64D076471949C5FE001CF5D3 /* MudFramework */ = {
 			isa = PBXGroup;
 			children = (
-				64D0775E194CC5DE001CF5D3 /* MudFramework类文档.doc */,
 				64D07717194CBAAD001CF5D3 /* MudFramework.h */,
 				64D076D1194CBAAD001CF5D3 /* Mud Foundation */,
 				64D076E4194CBAAD001CF5D3 /* Mud Request */,
@@ -281,6 +302,8 @@
 				64D076D9194CBAAD001CF5D3 /* NSDictionary+Extension.m */,
 				64D076DA194CBAAD001CF5D3 /* NSString+Conversion.h */,
 				64D076DB194CBAAD001CF5D3 /* NSString+Conversion.m */,
+				64073EB2199784BD001CCE27 /* NSError+Extension.h */,
+				64073EB3199784BD001CCE27 /* NSError+Extension.m */,
 			);
 			path = "Foundation Category";
 			sourceTree = "<group>";
@@ -346,8 +369,12 @@
 				64D076F8194CBAAD001CF5D3 /* UITableViewHeaderFooterView+Extension.m */,
 				64D076F9194CBAAD001CF5D3 /* UIView+Toast.h */,
 				64D076FA194CBAAD001CF5D3 /* UIView+Toast.m */,
-				64E71D2A197E7ADE005F6619 /* UIDevice+OpenUDID.h */,
-				64E71D2B197E7ADE005F6619 /* UIDevice+OpenUDID.m */,
+				64E71D20197E4950005F6619 /* UIDevice+OpenUDID.h */,
+				64959F88198BE6BF00984DC9 /* UIDevice+Exension.h */,
+				64959F89198BE6BF00984DC9 /* UIDevice+Exension.m */,
+				64E71D21197E4950005F6619 /* UIDevice+OpenUDID.m */,
+				64905D4F1990B946005CAD28 /* UIApplication+Extension.h */,
+				64905D501990B946005CAD28 /* UIApplication+Extension.m */,
 			);
 			path = "UI Category";
 			sourceTree = "<group>";
@@ -394,6 +421,12 @@
 				64D07714194CBAAD001CF5D3 /* MudToolBar.m */,
 				64D07715194CBAAD001CF5D3 /* MudViewController.h */,
 				64D07716194CBAAD001CF5D3 /* MudViewController.m */,
+				64956A6019837C0800F80A6E /* MudTabPagesView.h */,
+				64956A6119837C0800F80A6E /* MudTabPagesView.m */,
+				64956A6419837D4700F80A6E /* MudTabPageBar.h */,
+				64956A6519837D4700F80A6E /* MudTabPageBar.m */,
+				64956A6819837FDE00F80A6E /* MudTabPageBarItem.h */,
+				64956A6919837FDE00F80A6E /* MudTabPageBarItem.m */,
 			);
 			path = "UI SubClass";
 			sourceTree = "<group>";
@@ -449,9 +482,15 @@
 				647FAB7C19519767004AA067 /* MudDisplayTableViewController.h in Headers */,
 				64F5256A1952D9A2002018A4 /* MudItemBarItem.h in Headers */,
 				64D0771B194CBAAD001CF5D3 /* NSArray+Extension.h in Headers */,
-				64E71D2C197E7ADE005F6619 /* UIDevice+OpenUDID.h in Headers */,
 				64D07753194CBAAD001CF5D3 /* MudToolBar.h in Headers */,
 				64F525641952CE2C002018A4 /* MudItemsBar.h in Headers */,
+				64959F8A198BE6BF00984DC9 /* UIDevice+Exension.h in Headers */,
+				64E71D22197E4950005F6619 /* UIDevice+OpenUDID.h in Headers */,
+				64073EB4199784BD001CCE27 /* NSError+Extension.h in Headers */,
+				64956A6219837C0800F80A6E /* MudTabPagesView.h in Headers */,
+				64905D511990B946005CAD28 /* UIApplication+Extension.h in Headers */,
+				64956A6A19837FDE00F80A6E /* MudTabPageBarItem.h in Headers */,
+				64956A6619837D4700F80A6E /* MudTabPageBar.h in Headers */,
 				64D0773B194CBAAD001CF5D3 /* UIView+Toast.h in Headers */,
 				64F525721953081F002018A4 /* UIView+Category.h in Headers */,
 				64D07733194CBAAD001CF5D3 /* UIColor+Extension.h in Headers */,
@@ -537,7 +576,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D0775F194CC5DE001CF5D3 /* MudFramework类文档.doc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,10 +595,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D07738194CBAAD001CF5D3 /* UITableViewCell+Exension.m in Sources */,
-				64E71D2D197E7ADE005F6619 /* UIDevice+OpenUDID.m in Sources */,
+				64E71D23197E4950005F6619 /* UIDevice+OpenUDID.m in Sources */,
 				64D0771E194CBAAD001CF5D3 /* NSDate+Conversion.m in Sources */,
 				64D0773A194CBAAD001CF5D3 /* UITableViewHeaderFooterView+Extension.m in Sources */,
 				64D07743194CBAAD001CF5D3 /* MudStarView.m in Sources */,
+				64905D521990B946005CAD28 /* UIApplication+Extension.m in Sources */,
 				64D0772C194CBAAD001CF5D3 /* MudRequestBase.m in Sources */,
 				64D0773F194CBAAD001CF5D3 /* MudNavigationBarMenuView.m in Sources */,
 				64D07722194CBAAD001CF5D3 /* NSString+Conversion.m in Sources */,
@@ -571,6 +610,8 @@
 				647FAB7D19519767004AA067 /* MudDisplayTableViewController.m in Sources */,
 				64D07750194CBAAD001CF5D3 /* MudTableViewController.m in Sources */,
 				64F525651952CE2C002018A4 /* MudItemsBar.m in Sources */,
+				64956A6319837C0800F80A6E /* MudTabPagesView.m in Sources */,
+				64073EB5199784BD001CCE27 /* NSError+Extension.m in Sources */,
 				64D07734194CBAAD001CF5D3 /* UIColor+Extension.m in Sources */,
 				64D07732194CBAAD001CF5D3 /* UIBarButtonItem+Extension.m in Sources */,
 				64D0773C194CBAAD001CF5D3 /* UIView+Toast.m in Sources */,
@@ -580,9 +621,12 @@
 				64F5256B1952D9A2002018A4 /* MudItemBarItem.m in Sources */,
 				64D0774D194CBAAD001CF5D3 /* MudSearchBar.m in Sources */,
 				64D0772A194CBAAD001CF5D3 /* MudRequest.m in Sources */,
+				64956A6719837D4700F80A6E /* MudTabPageBar.m in Sources */,
+				64959F8B198BE6BF00984DC9 /* UIDevice+Exension.m in Sources */,
 				64D07727194CBAAD001CF5D3 /* MudMutableArray.m in Sources */,
 				64F525731953081F002018A4 /* UIView+Category.m in Sources */,
 				64D07749194CBAAD001CF5D3 /* MudNavigationViewController.m in Sources */,
+				64956A6B19837FDE00F80A6E /* MudTabPageBarItem.m in Sources */,
 				64D0774B194CBAAD001CF5D3 /* MudPickerView.m in Sources */,
 				64D07736194CBAAD001CF5D3 /* UIImage+Resize.m in Sources */,
 				64D07745194CBAAD001CF5D3 /* MudAlertView.m in Sources */,

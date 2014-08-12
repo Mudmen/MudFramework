@@ -15,10 +15,10 @@
 @implementation MudRequestParam
 + (MudRequestParam *)paramWithURLSting:(NSString *)requestUrl andParams:(NSDictionary *)params {
     MudRequestParam *reqParam = [[MudRequestParam alloc]init];
-    reqParam.params = params;
+    reqParam.params = [NSMutableDictionary dictionaryWithDictionary:params];
     reqParam.requestUrl = requestUrl;
     reqParam.method = RequestMethodPOST;
-    reqParam.retryTimes = 1;
+    reqParam.retryTimes = 0;
     reqParam.timeoutInterval = 20;
     reqParam.retryInterval = 2;
     return reqParam;
@@ -26,11 +26,11 @@
 + (MudRequestParam *)paramWithURLSting:(NSString *)requestUrl andParams:(NSDictionary *)params
                             withPrefix:(NSString *)prefix {
     MudRequestParam *reqParam = [[MudRequestParam alloc]init];
-    reqParam.params = params;
+    reqParam.params = [NSMutableDictionary dictionaryWithDictionary:params];
     reqParam.requestUrl = requestUrl;
     reqParam.callbackPrefix = prefix;
     reqParam.method = RequestMethodPOST;
-    reqParam.retryTimes = 1;
+    reqParam.retryTimes = 0;
     reqParam.timeoutInterval = 20;
     reqParam.retryInterval = 2;
     return reqParam;
@@ -39,12 +39,12 @@
 + (MudRequestParam *)paramWithURLSting:(NSString *)requestUrl andParams:(NSDictionary *)params
                         additionParams:(NSDictionary *)otherPararms withPrefix:(NSString *)prefix {
     MudRequestParam *reqParam = [[MudRequestParam alloc]init];
-    reqParam.params = params;
+    reqParam.params = [NSMutableDictionary dictionaryWithDictionary:params];
     reqParam.requestUrl = requestUrl;
     reqParam.callbackPrefix = prefix;
     reqParam.additionalParams = otherPararms;
     reqParam.method = RequestMethodPOST;
-    reqParam.retryTimes = 1;
+    reqParam.retryTimes = 0;
     reqParam.timeoutInterval = 20;
     reqParam.retryInterval = 2;
     return reqParam;
@@ -52,6 +52,8 @@
 @end
 
 @implementation MudRequestBase
+
+@synthesize responders;
 
 - (id)init {
     self = [super init];

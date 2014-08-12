@@ -1,12 +1,21 @@
 //
-//  UIApplication+Version.m
-//  CRM
+//  UIApplication+Extension.m
+//  MudFramework
 //
-//  Created by TimTiger on 14-7-23.
-//  Copyright (c) 2014年 TimTiger. All rights reserved.
+//  Created by TimTiger on 14-8-5.
+//  Copyright (c) 2014年 Mudmen. All rights reserved.
 //
 
-#import "UIApplication+Version.h"
+#import "UIApplication+Extension.h"
+
+@implementation UIApplication (Extension)
+
++ (UIInterfaceOrientation)currentStatusBarOrientation {
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    return orientation;
+}
+
+@end
 
 @implementation UIApplication (Version)
 
@@ -45,7 +54,7 @@
             }
         });
     });
-
+    
 }
 
 + (void)updateApplicationWithURL:(NSURL *)url {

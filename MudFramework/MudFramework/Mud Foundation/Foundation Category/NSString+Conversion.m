@@ -18,6 +18,21 @@
     return date;
 }
 
+/**
+ *  NSDate转字符串
+ *
+ *  @param date   日期
+ *  @param format 字符串格式
+ *
+ *  @return 字符串
+ */
++ (NSString *)stringWithDate:(NSDate *)date withFormat:(NSString *)format {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:format];
+    NSString *result = [formatter stringFromDate:date];
+    return result;
+}
+
 - (NSString*)MD5
 {
 	// Create pointer to the string as UTF8

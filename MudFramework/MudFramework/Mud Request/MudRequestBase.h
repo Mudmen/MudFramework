@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 
 @property (nonatomic,copy) NSString *requestUrl;
 @property (nonatomic,copy) NSString *callbackPrefix;
-@property (nonatomic,retain) NSDictionary *params;  //参数
+@property (nonatomic,retain) NSMutableDictionary *params;  //参数
 @property (nonatomic,retain) NSDictionary *additionalParams;  //附加参数（上传图片，上传文字）
 @property (nonatomic,readwrite) NSInteger retryTimes;     // 剩余重试次数
 @property (nonatomic,readwrite) NSInteger retryInterval;   // 重试间隔
@@ -39,9 +39,10 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 
 @interface MudRequestBase : NSObject
 {
-    NSMutableArray *responders;
+
 }
 
+@property (nonatomic,readonly)  NSMutableArray *responders;
 @property (nonatomic,copy) NSURL *BaseURL;
 
 //添加、移除 网络回调响应者

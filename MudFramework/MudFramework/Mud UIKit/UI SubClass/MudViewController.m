@@ -74,6 +74,37 @@
     [super viewWillAppear:animated];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    NSArray *viewControllers = self.navigationController.viewControllers;
+    if (viewControllers.count == 1) {
+        if (IOS_7_OR_LATER) {
+            self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+        }
+    }
+    else{
+        if (IOS_7_OR_LATER) {
+            self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+            self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        }
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    NSArray *viewControllers = self.navigationController.viewControllers;
+    if (viewControllers.count > 1 && [viewControllers objectAtIndex:viewControllers.count-2] == self) {
+        // View is disappearing because a new view controller was pushed onto the stack
+        // NSLog(@"New view controller was pushed");
+        if (IOS_7_OR_LATER) {
+            self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+        }
+    } else if ([viewControllers indexOfObject:self] == NSNotFound) {
+        // View is disappearing because it was popped from the stack
+        //  NSLog(@"View controller was popped");
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -191,6 +222,11 @@
     [self.navigationItem setLeftBarButtonItem:backItem];
 }
 
+- (void)setBackBarButtonWithCustomView:(UIView *)customView {
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:customView];
+    [self.navigationItem setLeftBarButtonItem:backItem];
+}
+
 - (void)setLeftBarButtonWithImage:(UIImage *)image {
     UIBarButtonItem *backItem = [UIBarButtonItem itemWithImage:image target:self action:@selector(onLeftButtonAction:)];
     [self.navigationItem setLeftBarButtonItem:backItem];
@@ -199,6 +235,16 @@
 - (void)setRightBarButtonWithImage:(UIImage *)image {
     UIBarButtonItem *rightItem = [UIBarButtonItem itemWithImage:image target:self action:@selector(onRightButtonAction:)];
     [self.navigationItem setRightBarButtonItem:rightItem];
+}
+
+- (void)setRightBarButtonWithTitle:(NSString *)title {
+    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithTitle:title target:self action:@selector(onRightButtonAction:)];
+    [self.navigationItem setRightBarButtonItem:rightItem];
+}
+
+- (void)setRightBarButtonWithCustomView:(UIView *)customView {
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:customView];
+    [self.navigationItem setRightBarButtonItem:backItem];
 }
 
 - (void)onLeftButtonAction:(id)sender {

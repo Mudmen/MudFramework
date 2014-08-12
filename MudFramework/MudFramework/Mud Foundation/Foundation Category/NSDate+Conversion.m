@@ -23,9 +23,9 @@
 }
 
 /**
- *  NSDate 转成 double
+ *  NSDate 转成 NSTimeInterval
  *
- *  @return double
+ *  @return NSTimeInterval
  */
 - (NSTimeInterval)dateToNSTimeInterval {
     NSTimeInterval timeInterval = [self timeIntervalSince1970];
@@ -41,5 +41,7 @@
     NSNumber *number = [NSNumber numberWithDouble:[self dateToNSTimeInterval]];
     return number;
 }
+
+
 
 @end

@@ -12,6 +12,7 @@
 
 + (UIBarButtonItem *)itemWithImage:(UIImage*)image target:(id)target action:(SEL)action;
 + (UIBarButtonItem *)itemWithTitle:(NSString*)title target:(id)target action:(SEL)action;
++ (UIBarButtonItem *)itemWithCustomView:(UIView *)view;
 
 - (void)setTitleColor:(UIColor *)color forState:(UIControlState)state;
 

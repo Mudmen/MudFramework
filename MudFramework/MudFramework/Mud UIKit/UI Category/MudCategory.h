@@ -17,5 +17,7 @@
 #import "UITableViewCell+Exension.h"
 #import "UIView+Category.h"
 #import "UIDevice+OpenUDID.h"
+#import "UIDevice+Exension.h"
+#import "UIApplication+Extension.h"
 
 #endif

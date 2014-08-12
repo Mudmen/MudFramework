@@ -6,19 +6,17 @@
 	<dict>
 		<key>MudFramework.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<key>MudFrameworkTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>64D076411949C5FE001CF5D3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>64D076511949C5FE001CF5D3</key>
 		<dict>
 			<key>primary</key>

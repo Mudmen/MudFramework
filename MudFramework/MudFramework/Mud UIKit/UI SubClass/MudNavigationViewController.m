@@ -30,7 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupView];
+    // Do any additional setup after loading the view.
+    self.autorotate = NO;
+    self.navigationBar.translucent = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,9 +41,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Set View
-- (void)setupView {
+- (BOOL)shouldAutorotate {
+    return self.autorotate;
+}
 
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscape;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 /*

@@ -23,6 +23,8 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
+    NSInteger itemNum = 0;
+    
     for (UIView *view in self.subviews) {
         if ([view isKindOfClass:[UIButton class]]) {
             CGRect frame = view.frame;
@@ -30,8 +32,9 @@
                 frame.origin.x = 0.f;
                 frame.origin.y = 0.f;
             }else{
-                frame.origin.x = 320 -60;
+                frame.origin.x = frame.origin.x+5+IOS_7_OR_LATER*10+15*itemNum;
                 frame.origin.y = 0.f;
+                itemNum++;
             }
             view.frame = frame;
         }

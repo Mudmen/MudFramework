@@ -54,8 +54,11 @@
 @interface MudViewController (UIBarButtonItem)
 
 - (void)setBackBarButtonWithImage:(UIImage *)image;
+- (void)setBackBarButtonWithCustomView:(UIView *)customView;
 - (void)setRightBarButtonWithImage:(UIImage *)image;
+- (void)setRightBarButtonWithCustomView:(UIView *)customView;
 - (void)setLeftBarButtonWithImage:(UIImage *)image;
+- (void)setRightBarButtonWithTitle:(NSString *)title;
 - (void)onBackButtonAction:(id)sender;
 - (void)onRightButtonAction:(id)sender;
 - (void)onLeftButtonAction:(id)sender;

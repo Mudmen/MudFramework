@@ -12,5 +12,6 @@
 #import "NSDate+Conversion.h"
 #import "NSString+Conversion.h"
 #import "NSDictionary+Extension.h"
+#import "NSError+Extension.h"
 
 #endif

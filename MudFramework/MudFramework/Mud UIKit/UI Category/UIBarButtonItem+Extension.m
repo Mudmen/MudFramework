@@ -16,6 +16,7 @@
     button.frame = CGRectMake(0, 0, 60, 44);
     [button setImage:image forState:UIControlStateNormal];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    button.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:button];
     return item;
 }
@@ -39,6 +40,11 @@
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:button];
     [item setStyle:UIBarButtonItemStylePlain];
+    return item;
+}
+
++ (UIBarButtonItem *)itemWithCustomView:(UIView *)view {
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:view];
     return item;
 }
 

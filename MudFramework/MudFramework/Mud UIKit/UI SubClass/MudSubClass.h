@@ -18,5 +18,6 @@
 #import "MudSearchBar.h"
 #import "MudTextView.h"
 #import "MudAlertView.h"
+#import "MudTabPagesView.h"
 
 #endif

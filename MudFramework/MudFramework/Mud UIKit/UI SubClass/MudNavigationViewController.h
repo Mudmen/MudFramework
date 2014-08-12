@@ -10,4 +10,7 @@
 
 @interface MudNavigationViewController : UINavigationController
 
+//是否支持屏幕自动旋转
+@property (nonatomic,readwrite) BOOL autorotate;
+
 @end
