@@ -9,6 +9,7 @@
 #ifndef MudFoundation_h
 #define MudFoundation_h
 
+#import "MudFoundationBase.h"
 #import "MudFoundationCategory.h"
 #import "MudFoundationProtocol.h"
 #import "MudFoundationSubclass.h"

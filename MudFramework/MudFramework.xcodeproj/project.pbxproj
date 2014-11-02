@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		64073EB4199784BD001CCE27 /* NSError+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64073EB2199784BD001CCE27 /* NSError+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64073EB5199784BD001CCE27 /* NSError+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64073EB3199784BD001CCE27 /* NSError+Extension.m */; };
+		64279DCC19A0965800964E7B /* MudManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 64279DCA19A0965800964E7B /* MudManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64279DCD19A0965800964E7B /* MudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64279DCB19A0965800964E7B /* MudManager.m */; };
+		64279DD119A097F500964E7B /* MudFoundationBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 64279DD019A097E400964E7B /* MudFoundationBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6462B30219E92502004125EE /* NSFileManager+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 6462B30019E92502004125EE /* NSFileManager+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6462B30319E92502004125EE /* NSFileManager+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6462B30119E92502004125EE /* NSFileManager+Category.m */; };
 		647FAB7C19519767004AA067 /* MudDisplayTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 647FAB7A19519767004AA067 /* MudDisplayTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		647FAB7D19519767004AA067 /* MudDisplayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647FAB7B19519767004AA067 /* MudDisplayTableViewController.m */; };
+		6485E564199A038C00872A73 /* NSURL+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6485E562199A038C00872A73 /* NSURL+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6485E565199A038C00872A73 /* NSURL+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6485E563199A038C00872A73 /* NSURL+Extension.m */; };
 		64905D511990B946005CAD28 /* UIApplication+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64905D4F1990B946005CAD28 /* UIApplication+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64905D521990B946005CAD28 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64905D501990B946005CAD28 /* UIApplication+Extension.m */; };
 		64956A6219837C0800F80A6E /* MudTabPagesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64956A6019837C0800F80A6E /* MudTabPagesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -100,8 +107,15 @@
 /* Begin PBXFileReference section */
 		64073EB2199784BD001CCE27 /* NSError+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extension.h"; sourceTree = "<group>"; };
 		64073EB3199784BD001CCE27 /* NSError+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Extension.m"; sourceTree = "<group>"; };
+		64279DCA19A0965800964E7B /* MudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudManager.h; sourceTree = "<group>"; };
+		64279DCB19A0965800964E7B /* MudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudManager.m; sourceTree = "<group>"; };
+		64279DD019A097E400964E7B /* MudFoundationBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MudFoundationBase.h; sourceTree = "<group>"; };
+		6462B30019E92502004125EE /* NSFileManager+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Category.h"; sourceTree = "<group>"; };
+		6462B30119E92502004125EE /* NSFileManager+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Category.m"; sourceTree = "<group>"; };
 		647FAB7A19519767004AA067 /* MudDisplayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudDisplayTableViewController.h; sourceTree = "<group>"; };
 		647FAB7B19519767004AA067 /* MudDisplayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudDisplayTableViewController.m; sourceTree = "<group>"; };
+		6485E562199A038C00872A73 /* NSURL+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Extension.h"; sourceTree = "<group>"; };
+		6485E563199A038C00872A73 /* NSURL+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Extension.m"; sourceTree = "<group>"; };
 		64905D4F1990B946005CAD28 /* UIApplication+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extension.h"; sourceTree = "<group>"; };
 		64905D501990B946005CAD28 /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
 		64956A6019837C0800F80A6E /* MudTabPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudTabPagesView.h; sourceTree = "<group>"; };
@@ -212,6 +226,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64279DC919A0963F00964E7B /* Foundation Base */ = {
+			isa = PBXGroup;
+			children = (
+				64279DCA19A0965800964E7B /* MudManager.h */,
+				64279DCB19A0965800964E7B /* MudManager.m */,
+				64279DD019A097E400964E7B /* MudFoundationBase.h */,
+			);
+			path = "Foundation Base";
+			sourceTree = "<group>";
+		};
 		64D076391949C5FE001CF5D3 = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +306,7 @@
 		64D076D1194CBAAD001CF5D3 /* Mud Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				64279DC919A0963F00964E7B /* Foundation Base */,
 				64D076D2194CBAAD001CF5D3 /* Foundation Category */,
 				64D076DC194CBAAD001CF5D3 /* Foundation Protocol */,
 				64D076DF194CBAAD001CF5D3 /* Foundation SubClass */,
@@ -304,6 +329,10 @@
 				64D076DB194CBAAD001CF5D3 /* NSString+Conversion.m */,
 				64073EB2199784BD001CCE27 /* NSError+Extension.h */,
 				64073EB3199784BD001CCE27 /* NSError+Extension.m */,
+				6485E562199A038C00872A73 /* NSURL+Extension.h */,
+				6485E563199A038C00872A73 /* NSURL+Extension.m */,
+				6462B30019E92502004125EE /* NSFileManager+Category.h */,
+				6462B30119E92502004125EE /* NSFileManager+Category.m */,
 			);
 			path = "Foundation Category";
 			sourceTree = "<group>";
@@ -490,8 +519,12 @@
 				64956A6219837C0800F80A6E /* MudTabPagesView.h in Headers */,
 				64905D511990B946005CAD28 /* UIApplication+Extension.h in Headers */,
 				64956A6A19837FDE00F80A6E /* MudTabPageBarItem.h in Headers */,
+				6485E564199A038C00872A73 /* NSURL+Extension.h in Headers */,
 				64956A6619837D4700F80A6E /* MudTabPageBar.h in Headers */,
 				64D0773B194CBAAD001CF5D3 /* UIView+Toast.h in Headers */,
+				64279DCC19A0965800964E7B /* MudManager.h in Headers */,
+				6462B30219E92502004125EE /* NSFileManager+Category.h in Headers */,
+				64279DD119A097F500964E7B /* MudFoundationBase.h in Headers */,
 				64F525721953081F002018A4 /* UIView+Category.h in Headers */,
 				64D07733194CBAAD001CF5D3 /* UIColor+Extension.h in Headers */,
 				64D07723194CBAAD001CF5D3 /* FirstResponderDelegate.h in Headers */,
@@ -610,6 +643,7 @@
 				647FAB7D19519767004AA067 /* MudDisplayTableViewController.m in Sources */,
 				64D07750194CBAAD001CF5D3 /* MudTableViewController.m in Sources */,
 				64F525651952CE2C002018A4 /* MudItemsBar.m in Sources */,
+				6462B30319E92502004125EE /* NSFileManager+Category.m in Sources */,
 				64956A6319837C0800F80A6E /* MudTabPagesView.m in Sources */,
 				64073EB5199784BD001CCE27 /* NSError+Extension.m in Sources */,
 				64D07734194CBAAD001CF5D3 /* UIColor+Extension.m in Sources */,
@@ -628,8 +662,10 @@
 				64D07749194CBAAD001CF5D3 /* MudNavigationViewController.m in Sources */,
 				64956A6B19837FDE00F80A6E /* MudTabPageBarItem.m in Sources */,
 				64D0774B194CBAAD001CF5D3 /* MudPickerView.m in Sources */,
+				64279DCD19A0965800964E7B /* MudManager.m in Sources */,
 				64D07736194CBAAD001CF5D3 /* UIImage+Resize.m in Sources */,
 				64D07745194CBAAD001CF5D3 /* MudAlertView.m in Sources */,
+				6485E565199A038C00872A73 /* NSURL+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +717,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -711,6 +748,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -730,7 +768,9 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MudFrameworkTests/MudFrameworkTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -747,6 +787,7 @@
 				GCC_PREFIX_HEADER = "MudFramework/MudFramework-Prefix.pch";
 				INFOPLIST_FILE = "MudFrameworkTests/MudFrameworkTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

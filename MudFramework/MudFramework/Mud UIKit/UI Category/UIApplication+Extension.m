@@ -44,7 +44,7 @@
                 NSDictionary *releaseInfo = [infoArray objectAtIndex:0];
                 NSString *lastVersion = [releaseInfo objectForKey:@"version"];
                 __block NSURL *updateURL = [NSURL URLWithString:[releaseInfo objectForKey:@"trackViewUrl"]];
-                if (![lastVersion isEqualToString:currentVersion]) {
+                if (NSOrderedDescending == [lastVersion localizedStandardCompare:currentVersion]) {
                     handler(YES,updateURL);
                 }
                 else
@@ -54,7 +54,6 @@
             }
         });
     });
-    
 }
 
 + (void)updateApplicationWithURL:(NSURL *)url {

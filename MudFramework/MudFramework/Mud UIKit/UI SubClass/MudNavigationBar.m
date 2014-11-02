@@ -23,20 +23,33 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    NSInteger itemNum = 0;
+    if (IOS_7_BELOW) {
+        return;
+    }
     
-    for (UIView *view in self.subviews) {
-        if ([view isKindOfClass:[UIButton class]]) {
-            CGRect frame = view.frame;
-            if (frame.origin.x < 30) {
-                frame.origin.x = 0.f;
-                frame.origin.y = 0.f;
-            }else{
-                frame.origin.x = frame.origin.x+5+IOS_7_OR_LATER*10+15*itemNum;
-                frame.origin.y = 0.f;
-                itemNum++;
-            }
-            view.frame = frame;
+    NSInteger rightBarButtonItemsCount = self.topItem.rightBarButtonItems.count;
+    if (rightBarButtonItemsCount > 0) {
+        NSMutableArray *rightItems = [NSMutableArray arrayWithArray:self.topItem.rightBarButtonItems];
+        UIBarButtonItem *item = [rightItems objectAtIndex:0];
+        if (item.tag != 299) {
+            UIBarButtonItem *rightSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+            rightSpacer.width = -10;
+            rightSpacer.tag = 299;
+            [rightItems insertObject:rightSpacer atIndex:0];
+            
+            self.topItem.rightBarButtonItems = rightItems;
+        }
+    }
+    NSInteger leftBarButtonItemsCount = self.topItem.leftBarButtonItems.count;
+    if (leftBarButtonItemsCount > 0) {
+        NSMutableArray *leftItems = [NSMutableArray arrayWithArray:self.topItem.leftBarButtonItems];
+        UIBarButtonItem *rightItem = [leftItems objectAtIndex:0];
+        if (rightItem.tag != 300) {
+            UIBarButtonItem *leftSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+            leftSpacer.width = -10;
+            leftSpacer.tag = 300;
+            [leftItems insertObject:leftSpacer atIndex:0];
+            self.topItem.leftBarButtonItems = leftItems;
         }
     }
 }

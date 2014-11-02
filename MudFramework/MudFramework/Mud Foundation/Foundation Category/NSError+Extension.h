@@ -10,6 +10,9 @@
 
 @interface NSError (Extension)
 
-- (NSError *)errorWithDomain:(NSString *)domain localizedDescription:(NSString *)localizedDes errorCode:(NSInteger)code;
+/**
+ * 用参数信息，生成一个错误
+**/
++ (NSError *)errorWithDomain:(NSString *)domain localizedDescription:(NSString *)localizedDes errorCode:(NSInteger)code;
 
 @end

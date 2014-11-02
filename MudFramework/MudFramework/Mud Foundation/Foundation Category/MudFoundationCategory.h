@@ -13,5 +13,7 @@
 #import "NSString+Conversion.h"
 #import "NSDictionary+Extension.h"
 #import "NSError+Extension.h"
+#import "NSURL+Extension.h"
+#import "NSFileManager+Category.h"
 
 #endif

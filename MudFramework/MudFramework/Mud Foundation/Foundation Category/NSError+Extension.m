@@ -10,7 +10,7 @@
 
 @implementation NSError (Extension)
 
-- (NSError *)errorWithDomain:(NSString *)domain localizedDescription:(NSString *)localizedDes errorCode:(NSInteger)code {
++ (NSError *)errorWithDomain:(NSString *)domain localizedDescription:(NSString *)localizedDes errorCode:(NSInteger)code {
     NSDictionary *userinfo = [NSDictionary dictionaryWithObjectsAndKeys:localizedDes,NSLocalizedDescriptionKey, nil];
     NSError *error = [NSError errorWithDomain:domain code:code userInfo:userinfo];
     return error;

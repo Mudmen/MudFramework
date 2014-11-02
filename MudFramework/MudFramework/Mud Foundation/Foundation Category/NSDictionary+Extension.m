@@ -15,7 +15,7 @@
         return nil;
     }
     
-    NSString *value = [self objectForKey:aKey];
+    id value = [self objectForKey:aKey];
     if ([value isKindOfClass:[NSString class]]) {
         return value;
     }
@@ -28,7 +28,7 @@
         return nil;
     }
     
-    NSArray *value = [self objectForKey:aKey];
+    id value = [self objectForKey:aKey];
     if ([value isKindOfClass:[NSArray class]]) {
         return value;
     }
@@ -41,11 +41,10 @@
         return nil;
     }
     
-    NSDictionary *value = [self objectForKey:aKey];
+    id value = [self objectForKey:aKey];
     if ([value isKindOfClass:[NSDictionary class]]) {
         return value;
     }
-    
     return nil;
 }
 
@@ -54,7 +53,7 @@
         return nil;
     }
     
-    NSData *value = [self objectForKey:aKey];
+    id value = [self objectForKey:aKey];
     if ([value isKindOfClass:[NSData class]]) {
         return value;
     }
@@ -63,11 +62,15 @@
 }
 
 - (NSInteger)integerForKey:(NSString *)aKey {
+   return [self integerForKey:aKey placeholder:0];
+}
+
+- (NSInteger)integerForKey:(NSString *)aKey placeholder:(NSInteger)placeholder {
     if (![self objectForKey:aKey] || !aKey) {
-        return 0;
+        return placeholder;
     }
     
-    NSNumber *value = [self objectForKey:aKey];
+    id value = [self objectForKey:aKey];
     if ([value isKindOfClass:[NSNumber class]]) {
         return [value integerValue];
     }
@@ -78,7 +81,7 @@
         }
     }
     
-    return 0;
+    return placeholder;
 }
 
 - (float)floatForKey:(NSString *)aKey {
@@ -86,7 +89,7 @@
         return 0;
     }
     
-    NSNumber *value = [self objectForKey:aKey];
+    id value = [self objectForKey:aKey];
     if ([value isKindOfClass:[NSNumber class]]) {
         return [value floatValue];
     }
@@ -105,7 +108,7 @@
         return 0;
     }
     
-    NSNumber *value = [self objectForKey:aKey];
+    id value = [self objectForKey:aKey];
     if ([value isKindOfClass:[NSNumber class]]) {
         return [value doubleValue];
     }
@@ -124,7 +127,7 @@
         return NO;
     }
     
-    NSNumber *value = [self objectForKey:aKey];
+    id value = [self objectForKey:aKey];
     if ([value isKindOfClass:[NSNumber class]]) {
         return [value boolValue];
     }

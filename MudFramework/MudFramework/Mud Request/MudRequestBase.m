@@ -65,7 +65,7 @@
 
 //添加 网络回调响应者
 - (void)addResponder:(id)responder {
-    @synchronized(responder) {
+    @synchronized(responders) {
         for (ResponderObject *obj in responders) {
             if (obj.object == responders) {
                 return;
@@ -77,9 +77,9 @@
     }
 }
 
-//添加 网络回调响应者
+//移除 网络回调响应者
 - (void)removeResponder:(id)responder{
-    @synchronized(responder) {
+    @synchronized(responders) {
         for (ResponderObject *obj in responders) {
             if (obj.object == responders) {
                 [responders removeObject:obj];

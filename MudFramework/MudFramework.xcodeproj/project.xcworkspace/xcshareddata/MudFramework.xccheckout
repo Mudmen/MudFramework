@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4D6713DA-423C-44A2-BF35-A8A78B01E7D1</string>
+	<string>8F952E17-4FC2-4607-A420-5D1C903579DB</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MudFramework</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6FEDF94D-DBBE-4A3B-AF82-DF3E564B2555</key>
-		<string>https://github.com/Mudmen/RuiliVideo.git</string>
+		<key>0A97171FE6AA790E141C624A191A0C37CD8884E0</key>
+		<string>https://github.com/Mudmen/MudFramework.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MudFramework/MudFramework.xcodeproj/project.xcworkspace</string>
+	<string>MudFramework/MudFramework.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6FEDF94D-DBBE-4A3B-AF82-DF3E564B2555</key>
+		<key>0A97171FE6AA790E141C624A191A0C37CD8884E0</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Mudmen/RuiliVideo.git</string>
+	<string>https://github.com/Mudmen/MudFramework.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6FEDF94D-DBBE-4A3B-AF82-DF3E564B2555</string>
+	<string>0A97171FE6AA790E141C624A191A0C37CD8884E0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6FEDF94D-DBBE-4A3B-AF82-DF3E564B2555</string>
+			<string>0A97171FE6AA790E141C624A191A0C37CD8884E0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>RuiliVideo</string>
+			<string>MudFramework</string>
 		</dict>
 	</array>
 </dict>

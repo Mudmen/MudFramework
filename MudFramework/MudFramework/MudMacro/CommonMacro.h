@@ -51,17 +51,18 @@ return _instance_;\
 #pragma mark - -----------------System--------------------------------------------------------
 #define SYSTEMVERSION [[UIDevice currentDevice].systemVersion floatValue]
 
+#define IOS_8_OR_LATER (((SYSTEMVERSION) >= 8.0) ? YES:NO)
 #define IOS_7_OR_LATER (((SYSTEMVERSION) >= 7.0) ? YES:NO)
 #define IOS_6_OR_LATER (((SYSTEMVERSION) >= 6.0) ? YES:NO)
 #define IOS_5_OR_LATER (((SYSTEMVERSION) >= 5.0) ? YES:NO)
 #define IOS_4_OR_LATER (((SYSTEMVERSION) >= 4.0) ? YES:NO)
 #define IOS_3_OR_LATER (((SYSTEMVERSION) >= 3.0) ? YES:NO)
 
-#define IOS_7_Below (((SYSTEMVERSION) < 7.0) ? YES:NO)
-#define IOS_6_Below (((SYSTEMVERSION) < 6.0) ? YES:NO)
-#define IOS_5_Below (((SYSTEMVERSION) < 5.0) ? YES:NO)
-#define IOS_4_Below (((SYSTEMVERSION) < 4.0) ? YES:NO)
-#define IOS_3_Below (((SYSTEMVERSION) < 3.0) ? YES:NO)
+#define IOS_7_BELOW (((SYSTEMVERSION) < 7.0) ? YES:NO)
+#define IOS_6_BELOW (((SYSTEMVERSION) < 6.0) ? YES:NO)
+#define IOS_5_BELOW (((SYSTEMVERSION) < 5.0) ? YES:NO)
+#define IOS_4_BELOW (((SYSTEMVERSION) < 4.0) ? YES:NO)
+#define IOS_3_BELOW (((SYSTEMVERSION) < 3.0) ? YES:NO)
 
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
@@ -83,4 +84,9 @@ static NSString * const urlname = @""#url;
 
 #pragma mark ---------------------- frame ,bounds ---------------------------------------------
 #define SELF_VIEW_BOUNDS_WIDTH   self.view.bounds.size.width
-#define SELF__VIEW_BOUNDS_HEIGHT self.view.bounds.size.height
+#define SELF_VIEW_BOUNDS_HEIGHT self.view.bounds.size.height
+
+
+#pragma mark -------------------- Notificaiton ---------------------------------------------
+#define CustomTabBarHiddenNotification @"RVTabBarHiddenNotification"
+#define CustomTabBarShowNotification   @"RVTabBarShowNotification"

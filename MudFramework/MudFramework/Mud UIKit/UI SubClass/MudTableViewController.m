@@ -93,13 +93,22 @@
 
 #pragma mark Public API
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.hiddenTabBarWhenPush == YES) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.navigationController.interactivePopGestureRecognizer.delegate = nil;
     }
     [self.navigationController pushViewController:viewController animated:animated];
+    if (self.hiddenTabBarWhenPush == YES) {
+        [self postNotificationName:CustomTabBarShowNotification object:nil];
+    }
 }
 
 - (void)popViewControllerAnimated:(BOOL)animated {
+    if (self.hiddenTabBarWhenPush == YES) {
+        [self postNotificationName:CustomTabBarShowNotification object:nil];
+    }
     [self.navigationController popViewControllerAnimated:animated];
 }
 
@@ -276,6 +285,16 @@
 
 - (void)setRightBarButtonWithImage:(UIImage *)image {
     UIBarButtonItem *rightItem = [UIBarButtonItem itemWithImage:image target:self action:@selector(onRightButtonAction:)];
+    [self.navigationItem setRightBarButtonItem:rightItem];
+}
+
+- (void)setBackBarButtonWithCustomView:(UIView *)customView {
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:customView];
+    [self.navigationItem setLeftBarButtonItem:backItem];
+}
+
+- (void)setRightBarButtonWithTitle:(NSString *)title {
+    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithTitle:title target:self action:@selector(onRightButtonAction:)];
     [self.navigationItem setRightBarButtonItem:rightItem];
 }
 

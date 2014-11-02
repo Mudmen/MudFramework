@@ -15,7 +15,7 @@
 #ifdef __cplusplus
 #define MUDUIKIT_EXTERN		extern "C" __attribute__((visibility ("default")))
 #else
-#define MUDUIKIT_EXTERN	        extern __attribute__((visibility ("default")))
+#define MUDUIKIT_EXTERN	    extern __attribute__((visibility ("default")))
 #endif
 
 #define MUDUIKIT_STATIC_INLINE	static inline

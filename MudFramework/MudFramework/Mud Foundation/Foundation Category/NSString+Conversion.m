@@ -52,6 +52,60 @@
     return output;
 }
 
+/**
+ *  根据秒 获取HH:MM:SS格式 字符串
+ *
+ *  @return 返回时间字符串
+ */
++ (NSString *)timeWithNSTimeInterval:(NSTimeInterval)interval {
+    NSInteger integer = (NSInteger)interval;
+    NSString *resultStr = [NSString string];
+    if (integer/3600 > 0) {
+        resultStr = [resultStr stringByAppendingString:[NSString stringWithFormat:@"%.2d:",integer/3600]];
+        integer %= 3600;
+    }
+
+    if (integer/60 > 0) {
+         resultStr = [resultStr stringByAppendingString:[NSString stringWithFormat:@"%.2d:",integer/60]];
+        integer %= 60;
+    } else {
+        resultStr = [resultStr stringByAppendingString:@"00:"];
+    }
+    
+    if (integer > 0) {
+        resultStr = [resultStr stringByAppendingString:[NSString stringWithFormat:@"%.2d:",integer]];
+    } else {
+        resultStr = [resultStr stringByAppendingString:@"00:"];
+    }
+    
+    
+    if ([resultStr isNotEmpty]) {
+        resultStr = [resultStr substringToIndex:[resultStr length]-1];
+    }
+    return resultStr;
+}
+
+/**
+ *  空间大小转化为带单位的字符串
+ *
+ *  @param size 空间大小
+ *
+ *  @return 带单位的字符串
+ */
++ (NSString *)sizeToString:(uint64_t)size {
+    NSString  * str = nil;
+    if (size/1024.f/1024.f/1024.f > 1) {
+        str = [NSString stringWithFormat:@"%0.2fGB",size/1024.f/1024.f/1024.f];
+    } else if (size/1024.f/1024.f > 1) {
+        str = [NSString stringWithFormat:@"%0.2fMB",size/1024.f/1024.f];
+    } else if (size/1024.f > 1) {
+        str = [NSString stringWithFormat:@"%0.2fKB",size/1024.f];
+    } else {
+        str = @"0KB";
+    }
+    return str;
+}
+
 @end
 
 
@@ -90,6 +144,54 @@
     }
     
     return NO;
+}
+
++ (BOOL)isNotEmptyString:(NSString *)str {
+    return ![NSString isEmptyString:str];
+}
+
+@end
+
+@implementation NSString (Regular)
+
+/**
+ *  检查是否是正确的邮箱地址
+ *
+ *  @param emailString 邮箱字符串
+ *
+ *  @return YES，有效，NO ,无效。
+ */
+- (ValidationResult)isValidEmail {
+    return [NSString isValidString:self withFormat:@"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"];
+}
+
++ (ValidationResult)isValidEmail:(NSString *)emailString {
+    return [NSString isValidString:emailString withFormat:@"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"];
+}
+
+/**
+ *  检查字符串是否符合指定格式
+ *
+ *  @param format 格式
+ *
+ *  @return YES,有效。 NO, 无效。
+ */
+- (ValidationResult)isValidWithFormat:(NSString *)format {
+    return [NSString isValidString:self withFormat:format];
+}
+
++ (ValidationResult)isValidString:(NSString *)string withFormat:(NSString *)format {
+    
+    if ([string isEmpty]) {
+        return ValidationResultValidateStringIsEmpty;
+    }
+    
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", format];
+    BOOL ret = [emailTest evaluateWithObject:string];
+    if (ret) {
+        return ValidationResultValid;
+    }
+    return ValidationResultInValid;
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "UIDevice+OpenUDID.h"
 #import <Foundation/Foundation.h>
+#import <AdSupport/AdSupport.h>
 
 
 #define kOpenUDIDErrorNone          0
@@ -455,6 +456,21 @@ static int const kOpenUDIDRedundancySlots = 100;
 
 + (NSString *)openUDID {
     return [OpenUDID value];
+}
+
++ (NSString *)ADUDID {
+    NSString *adUDID = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    return adUDID;
+}
+
++ (NSString *)CFUUID {
+    CFUUIDRef cfuuid = CFUUIDCreate(kCFAllocatorDefault);
+    NSString *cfuuidString = (NSString*)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, cfuuid));
+    return cfuuidString;
+}
+
++ (NSString *)NSUDID {
+    return [[NSUUID UUID] UUIDString];
 }
 
 @end

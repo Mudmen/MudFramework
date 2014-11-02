@@ -11,6 +11,7 @@
 
 MUDUIKIT_EXTERN NSString *const UIKeyboardHideNotification;
 
-@interface MudSearchBar : UISearchBar
-
+@interface MudSearchBar : UISearchBar<UISearchBarDelegate>
+- (void)changeBarTextfieldWithColor:(UIColor *)color bgImageName:(NSString *)bgImageName;
+- (void)changeBarCancelButtonWithColor:(UIColor *)textColor bgImageName:(NSString *)bgImageName;
 @end

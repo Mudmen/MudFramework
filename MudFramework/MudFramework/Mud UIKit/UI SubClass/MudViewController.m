@@ -76,6 +76,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [super viewDidAppear:YES];
     NSArray *viewControllers = self.navigationController.viewControllers;
     if (viewControllers.count == 1) {
         if (IOS_7_OR_LATER) {
@@ -92,6 +93,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    [super viewWillDisappear:YES];
     NSArray *viewControllers = self.navigationController.viewControllers;
     if (viewControllers.count > 1 && [viewControllers objectAtIndex:viewControllers.count-2] == self) {
         // View is disappearing because a new view controller was pushed onto the stack
@@ -137,9 +139,15 @@
            self.navigationController.interactivePopGestureRecognizer.delegate = nil;
     }
     [self.navigationController pushViewController:viewController animated:animated];
+    if (self.hiddenTabBarWhenPush == YES) {
+        [self postNotificationName:CustomTabBarShowNotification object:nil];
+    }
 }
 
 - (void)popViewControllerAnimated:(BOOL)animated {
+    if (self.hiddenTabBarWhenPush == YES) {
+        [self postNotificationName:CustomTabBarShowNotification object:nil];
+    }
     [self.navigationController popViewControllerAnimated:animated];
 }
 
