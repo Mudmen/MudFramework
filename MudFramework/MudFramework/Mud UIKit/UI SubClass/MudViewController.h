@@ -59,6 +59,7 @@
 - (void)setRightBarButtonWithCustomView:(UIView *)customView;
 - (void)setLeftBarButtonWithImage:(UIImage *)image;
 - (void)setRightBarButtonWithTitle:(NSString *)title;
+- (void)setLeftBarButtonWithTitle:(NSString *)title;
 - (void)onBackButtonAction:(id)sender;
 - (void)onRightButtonAction:(id)sender;
 - (void)onLeftButtonAction:(id)sender;

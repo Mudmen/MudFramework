@@ -14,22 +14,13 @@
 - (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL;
 
 /**
- *  获取文件大小
- *
- *  @param filePath 文件路劲
- *
- *  @return 文件大小
- */
-- (unsigned long long)fileSizeAtPath:(NSString*)filePath;
-
-/**
  *  获取文件夹 大小
  *
  *  @param folderPath 文件夹路径
  *
  *  @return 文件夹大小 【字符串 带单位】
  */
-- (unsigned long long)folderSize:(NSString *)folderPath;
+- (uint64_t)folderSize:(NSString *)folderPath;
 
 /**
  *  获取文件大小 ，带单位
@@ -39,5 +30,12 @@
  *  @return 大小
  */
 - (NSString *)stringFolderSize:(NSString *)folderPath;
+
+/**
+ *  获取手机剩余空间
+ *
+ *  @return 剩余空间
+ */
+-(uint64_t)getFreeDiskspace;
 
 @end

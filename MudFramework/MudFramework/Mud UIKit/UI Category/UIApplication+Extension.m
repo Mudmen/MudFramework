@@ -52,6 +52,7 @@
                     handler(NO,nil);
                 }
             }
+            handler(NO,nil);
         });
     });
 }

@@ -13,7 +13,7 @@
 
 - (NSDate *)stringToNSDate {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSDate *date = [dateFormatter dateFromString:self];
     return date;
 }
@@ -95,11 +95,11 @@
 + (NSString *)sizeToString:(uint64_t)size {
     NSString  * str = nil;
     if (size/1024.f/1024.f/1024.f > 1) {
-        str = [NSString stringWithFormat:@"%0.2fGB",size/1024.f/1024.f/1024.f];
+        str = [NSString stringWithFormat:@"%0.1fG",size/1024.f/1024.f/1024.f];
     } else if (size/1024.f/1024.f > 1) {
-        str = [NSString stringWithFormat:@"%0.2fMB",size/1024.f/1024.f];
+        str = [NSString stringWithFormat:@"%0.1fM",size/1024.f/1024.f];
     } else if (size/1024.f > 1) {
-        str = [NSString stringWithFormat:@"%0.2fKB",size/1024.f];
+        str = [NSString stringWithFormat:@"%0.1fKB",size/1024.f];
     } else {
         str = @"0KB";
     }
@@ -149,6 +149,23 @@
 + (BOOL)isNotEmptyString:(NSString *)str {
     return ![NSString isEmptyString:str];
 }
+
+/**
+ *  是否包含字符串
+ *
+ *  @param str 字符串
+ *
+ *  @return YES Or NO
+ */
+- (BOOL)isContainString:(NSString *)str {
+    NSRange range = [self rangeOfString:str];
+    if (range.length != 0) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 
 @end
 

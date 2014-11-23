@@ -62,6 +62,15 @@
 - (BOOL)isEmpty;
 - (BOOL)isNotEmpty;
 
+/**
+ *  是否包含字符串
+ *
+ *  @param str 字符串
+ *
+ *  @return YES Or NO
+ */
+- (BOOL)isContainString:(NSString *)str;
+
 @end
 
 typedef NS_ENUM(NSInteger,ValidationResult) {

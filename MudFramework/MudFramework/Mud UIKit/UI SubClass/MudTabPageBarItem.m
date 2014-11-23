@@ -33,7 +33,8 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     self.backgroundColor = [UIColor clearColor];
-    self.indexView.frame = CGRectMake((self.bounds.size.width-self.titleLabel.bounds.size.width)/2, self.bounds.size.height-self.indexViewHeight, self.titleLabel.bounds.size.width, self.indexViewHeight);
+    self.indexView.frame = CGRectMake(0, 0, self.titleLabel.bounds.size.width+4, self.indexViewHeight);
+    self.indexView.center = CGPointMake(self.titleLabel.center.x, self.bounds.size.height-self.indexViewHeight);
     self.indexView.backgroundColor = self.indexViewColor;
     if (self.indexViewHidden) {
         self.indexView.hidden = YES;
