@@ -298,6 +298,11 @@
     [self.navigationItem setRightBarButtonItem:rightItem];
 }
 
+- (void)setRightBarButtonWithCustomView:(UIView *)customView {
+    UIBarButtonItem *rigthItem = [[UIBarButtonItem alloc]initWithCustomView:customView];
+    [self.navigationItem setRightBarButtonItem:rigthItem];
+}
+
 - (void)onLeftButtonAction:(id)sender {
     
 }
