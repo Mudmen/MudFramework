@@ -13,7 +13,36 @@
 
 - (NSDate *)stringToNSDate {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *format = @"yyyy-MM-dd HH:mm:ss";
+    if (self.length < format.length)
+    {
+        format = [format substringToIndex:self.length-1];
+        [dateFormatter setDateFormat:format];
+        NSDate *date = [dateFormatter dateFromString:self];
+        return date;
+    } else if (self.length > format.length)
+    {
+        NSString *string = [self substringToIndex:format.length-1];
+        [dateFormatter setDateFormat:format];
+        NSDate *date = [dateFormatter dateFromString:string];
+        return date;
+    } else {
+        [dateFormatter setDateFormat:format];
+        NSDate *date = [dateFormatter dateFromString:self];
+        return date;
+    }
+}
+
+/**
+ *  字符串转NSDate
+ *
+ *  @param format 格式
+ *
+ *  @return 日期
+ */
+- (NSDate *)stringToNSDateWithFormat:(NSString *)format {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:format];
     NSDate *date = [dateFormatter dateFromString:self];
     return date;
 }

@@ -17,6 +17,59 @@
 		64956A6719837D4700F80A6E /* MudTabPageBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 64956A6519837D4700F80A6E /* MudTabPageBar.m */; };
 		64956A6B19837FDE00F80A6E /* MudTabPageBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 64956A6919837FDE00F80A6E /* MudTabPageBarItem.m */; };
 		64959F8B198BE6BF00984DC9 /* UIDevice+Exension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64959F89198BE6BF00984DC9 /* UIDevice+Exension.m */; };
+		64A745121A21805800EC45E4 /* NSString+Conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076DA194CBAAD001CF5D3 /* NSString+Conversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745131A21805800EC45E4 /* NSError+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64073EB2199784BD001CCE27 /* NSError+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745141A21805800EC45E4 /* NSURL+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6485E562199A038C00872A73 /* NSURL+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745151A21805800EC45E4 /* NSFileManager+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 6462B30019E92502004125EE /* NSFileManager+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745161A21805800EC45E4 /* FirstResponderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076DD194CBAAD001CF5D3 /* FirstResponderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745171A21805800EC45E4 /* MudFoundationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076DE194CBAAD001CF5D3 /* MudFoundationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745181A21805800EC45E4 /* MudFoundationSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076E0194CBAAD001CF5D3 /* MudFoundationSubclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745191A21805800EC45E4 /* MudMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076E1194CBAAD001CF5D3 /* MudMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7451A1A21805800EC45E4 /* MudFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076E3194CBAAD001CF5D3 /* MudFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7451B1A21805800EC45E4 /* MudRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076E5194CBAAD001CF5D3 /* MudRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7451C1A21805800EC45E4 /* MudRequestBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076E7194CBAAD001CF5D3 /* MudRequestBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7451D1A21805800EC45E4 /* MudRequestBase.m in Headers */ = {isa = PBXBuildFile; fileRef = 64D076E8194CBAAD001CF5D3 /* MudRequestBase.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7451E1A21805800EC45E4 /* MudUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076EB194CBAAD001CF5D3 /* MudUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7451F1A21805800EC45E4 /* MudUIkitDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076EC194CBAAD001CF5D3 /* MudUIkitDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745201A21805800EC45E4 /* MudCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076EE194CBAAD001CF5D3 /* MudCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745211A21805800EC45E4 /* UIView+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525701953081F002018A4 /* UIView+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745221A21805800EC45E4 /* UIBarButtonItem+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076EF194CBAAD001CF5D3 /* UIBarButtonItem+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745231A21805800EC45E4 /* UIColor+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076F1194CBAAD001CF5D3 /* UIColor+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745241A21805800EC45E4 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076F3194CBAAD001CF5D3 /* UIImage+Resize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745251A21805800EC45E4 /* UITableViewCell+Exension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076F5194CBAAD001CF5D3 /* UITableViewCell+Exension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745261A21805800EC45E4 /* UITableViewHeaderFooterView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076F7194CBAAD001CF5D3 /* UITableViewHeaderFooterView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745271A21805800EC45E4 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076F9194CBAAD001CF5D3 /* UIView+Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745281A21805800EC45E4 /* UIDevice+OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E71D20197E4950005F6619 /* UIDevice+OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745291A21805800EC45E4 /* UIDevice+Exension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64959F88198BE6BF00984DC9 /* UIDevice+Exension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7452A1A21805800EC45E4 /* UIApplication+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64905D4F1990B946005CAD28 /* UIApplication+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7452B1A21805800EC45E4 /* MudCustomUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076FC194CBAAD001CF5D3 /* MudCustomUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7452C1A21805800EC45E4 /* MudNavigationBarMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076FD194CBAAD001CF5D3 /* MudNavigationBarMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7452D1A21805800EC45E4 /* MudPickerTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076FF194CBAAD001CF5D3 /* MudPickerTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7452E1A21805800EC45E4 /* MudStarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07701194CBAAD001CF5D3 /* MudStarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7452F1A21805800EC45E4 /* MudDisplayTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 647FAB7A19519767004AA067 /* MudDisplayTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745301A21805800EC45E4 /* MudItemsBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525621952CE2C002018A4 /* MudItemsBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745311A21805800EC45E4 /* MudItemBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F525681952D9A2002018A4 /* MudItemBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745321A21805800EC45E4 /* MudAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07704194CBAAD001CF5D3 /* MudAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745331A21805800EC45E4 /* MudNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07706194CBAAD001CF5D3 /* MudNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745341A21805800EC45E4 /* MudNavigationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07708194CBAAD001CF5D3 /* MudNavigationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745351A21805800EC45E4 /* MudPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D0770A194CBAAD001CF5D3 /* MudPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745361A21805800EC45E4 /* MudSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D0770C194CBAAD001CF5D3 /* MudSearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745371A21805900EC45E4 /* MudSubClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D0770E194CBAAD001CF5D3 /* MudSubClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745381A21805900EC45E4 /* MudTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D0770F194CBAAD001CF5D3 /* MudTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745391A21805900EC45E4 /* MudTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07711194CBAAD001CF5D3 /* MudTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7453A1A21805900EC45E4 /* MudToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07713194CBAAD001CF5D3 /* MudToolBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7453B1A21805900EC45E4 /* MudViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07715194CBAAD001CF5D3 /* MudViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7453C1A21805900EC45E4 /* MudTabPagesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64956A6019837C0800F80A6E /* MudTabPagesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7453D1A21805900EC45E4 /* MudTabPageBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 64956A6419837D4700F80A6E /* MudTabPageBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7453E1A21805900EC45E4 /* MudTabPageBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 64956A6819837FDE00F80A6E /* MudTabPageBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A7453F1A21805900EC45E4 /* CommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D07719194CBAAD001CF5D3 /* CommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745401A21809600EC45E4 /* MudManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 64279DCA19A0965800964E7B /* MudManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745411A21809600EC45E4 /* MudFoundationBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 64279DD019A097E400964E7B /* MudFoundationBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745421A21809600EC45E4 /* MudFoundationCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076D3194CBAAD001CF5D3 /* MudFoundationCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745431A21809600EC45E4 /* NSArray+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076D4194CBAAD001CF5D3 /* NSArray+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745441A21809600EC45E4 /* NSDate+Conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076D6194CBAAD001CF5D3 /* NSDate+Conversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745451A21809600EC45E4 /* NSDictionary+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076D8194CBAAD001CF5D3 /* NSDictionary+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64A745461A21809700EC45E4 /* MudRequestHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D076E9194CBAAD001CF5D3 /* MudRequestHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D076551949C5FE001CF5D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D076451949C5FE001CF5D3 /* Foundation.framework */; };
 		64D076601949C5FE001CF5D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64D0765E1949C5FE001CF5D3 /* InfoPlist.strings */; };
 		64D076621949C5FE001CF5D3 /* MudFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D076611949C5FE001CF5D3 /* MudFrameworkTests.m */; };
@@ -424,6 +477,59 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D07757194CBAAD001CF5D3 /* MudFramework.h in Headers */,
+				64A745401A21809600EC45E4 /* MudManager.h in Headers */,
+				64A745411A21809600EC45E4 /* MudFoundationBase.h in Headers */,
+				64A745431A21809600EC45E4 /* NSArray+Extension.h in Headers */,
+				64A745421A21809600EC45E4 /* MudFoundationCategory.h in Headers */,
+				64A745441A21809600EC45E4 /* NSDate+Conversion.h in Headers */,
+				64A745451A21809600EC45E4 /* NSDictionary+Extension.h in Headers */,
+				64A745461A21809700EC45E4 /* MudRequestHeader.h in Headers */,
+				64A745121A21805800EC45E4 /* NSString+Conversion.h in Headers */,
+				64A745131A21805800EC45E4 /* NSError+Extension.h in Headers */,
+				64A745141A21805800EC45E4 /* NSURL+Extension.h in Headers */,
+				64A745151A21805800EC45E4 /* NSFileManager+Category.h in Headers */,
+				64A745161A21805800EC45E4 /* FirstResponderDelegate.h in Headers */,
+				64A745171A21805800EC45E4 /* MudFoundationProtocol.h in Headers */,
+				64A745181A21805800EC45E4 /* MudFoundationSubclass.h in Headers */,
+				64A745191A21805800EC45E4 /* MudMutableArray.h in Headers */,
+				64A7451A1A21805800EC45E4 /* MudFoundation.h in Headers */,
+				64A7451B1A21805800EC45E4 /* MudRequest.h in Headers */,
+				64A7451C1A21805800EC45E4 /* MudRequestBase.h in Headers */,
+				64A7451D1A21805800EC45E4 /* MudRequestBase.m in Headers */,
+				64A7451E1A21805800EC45E4 /* MudUIKit.h in Headers */,
+				64A7451F1A21805800EC45E4 /* MudUIkitDefines.h in Headers */,
+				64A745201A21805800EC45E4 /* MudCategory.h in Headers */,
+				64A745211A21805800EC45E4 /* UIView+Category.h in Headers */,
+				64A745221A21805800EC45E4 /* UIBarButtonItem+Extension.h in Headers */,
+				64A745231A21805800EC45E4 /* UIColor+Extension.h in Headers */,
+				64A745241A21805800EC45E4 /* UIImage+Resize.h in Headers */,
+				64A745251A21805800EC45E4 /* UITableViewCell+Exension.h in Headers */,
+				64A745261A21805800EC45E4 /* UITableViewHeaderFooterView+Extension.h in Headers */,
+				64A745271A21805800EC45E4 /* UIView+Toast.h in Headers */,
+				64A745281A21805800EC45E4 /* UIDevice+OpenUDID.h in Headers */,
+				64A745291A21805800EC45E4 /* UIDevice+Exension.h in Headers */,
+				64A7452A1A21805800EC45E4 /* UIApplication+Extension.h in Headers */,
+				64A7452B1A21805800EC45E4 /* MudCustomUI.h in Headers */,
+				64A7452C1A21805800EC45E4 /* MudNavigationBarMenuView.h in Headers */,
+				64A7452D1A21805800EC45E4 /* MudPickerTextField.h in Headers */,
+				64A7452E1A21805800EC45E4 /* MudStarView.h in Headers */,
+				64A7452F1A21805800EC45E4 /* MudDisplayTableViewController.h in Headers */,
+				64A745301A21805800EC45E4 /* MudItemsBar.h in Headers */,
+				64A745311A21805800EC45E4 /* MudItemBarItem.h in Headers */,
+				64A745321A21805800EC45E4 /* MudAlertView.h in Headers */,
+				64A745331A21805800EC45E4 /* MudNavigationBar.h in Headers */,
+				64A745341A21805800EC45E4 /* MudNavigationViewController.h in Headers */,
+				64A745351A21805800EC45E4 /* MudPickerView.h in Headers */,
+				64A745361A21805800EC45E4 /* MudSearchBar.h in Headers */,
+				64A745371A21805900EC45E4 /* MudSubClass.h in Headers */,
+				64A745381A21805900EC45E4 /* MudTableViewController.h in Headers */,
+				64A745391A21805900EC45E4 /* MudTextView.h in Headers */,
+				64A7453A1A21805900EC45E4 /* MudToolBar.h in Headers */,
+				64A7453B1A21805900EC45E4 /* MudViewController.h in Headers */,
+				64A7453C1A21805900EC45E4 /* MudTabPagesView.h in Headers */,
+				64A7453D1A21805900EC45E4 /* MudTabPageBar.h in Headers */,
+				64A7453E1A21805900EC45E4 /* MudTabPageBarItem.h in Headers */,
+				64A7453F1A21805900EC45E4 /* CommonMacro.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,9 +717,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -646,6 +753,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

@@ -34,7 +34,7 @@
     green += 0.1;
     blue += 0.1;
     [button setTitleColor:[UIColor colorWithRed:red green:green blue:blue alpha:alpha] forState:UIControlStateHighlighted];
-    button.frame = CGRectMake(0, 0,44, 44);
+    button.frame = CGRectMake(0, 0,60, 44);
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitle:title forState:UIControlStateHighlighted];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];

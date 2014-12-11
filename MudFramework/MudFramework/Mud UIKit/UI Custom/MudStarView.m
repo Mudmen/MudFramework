@@ -21,6 +21,10 @@
     return self;
 }
 
+- (void)awakeFromNib {
+    [self initView];
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     starNormalView.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);

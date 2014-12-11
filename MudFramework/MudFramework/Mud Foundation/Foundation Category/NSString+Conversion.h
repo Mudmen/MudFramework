@@ -28,6 +28,15 @@
 - (NSDate *)stringToNSDate;
 
 /**
+ *  字符串转NSDate
+ *
+ *  @param format 格式
+ *
+ *  @return 日期
+ */
+- (NSDate *)stringToNSDateWithFormat:(NSString *)format;
+
+/**
  *  字符串MD5编码
  *
  *  @return 编码后的字符串

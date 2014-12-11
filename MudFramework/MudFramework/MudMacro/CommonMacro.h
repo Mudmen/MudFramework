@@ -86,6 +86,12 @@ static NSString * const urlname = @""#url;
 #define SELF_VIEW_BOUNDS_WIDTH   self.view.bounds.size.width
 #define SELF_VIEW_BOUNDS_HEIGHT self.view.bounds.size.height
 
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+
+#define  NAVIGATIONBAR_HEIGHT self.navigationController.navigationBar.frame.size.height
+#define  STATUSBAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+
 
 #pragma mark -------------------- Notificaiton ---------------------------------------------
 #define CustomTabBarHiddenNotification @"RVTabBarHiddenNotification"

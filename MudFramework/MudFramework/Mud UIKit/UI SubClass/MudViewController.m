@@ -240,17 +240,6 @@
     [self.navigationItem setLeftBarButtonItem:backItem];
 }
 
-- (void)setLeftBarButtonWithTitle:(NSString *)title {
-    
-    UILabel *leftLable = [[UILabel alloc]initWithFrame:CGRectMake(10.0f, 12.0f, 100.0f, 20.0f)];
-    [leftLable setTextColor:[UIColor whiteColor]];
-    [leftLable setFont:[UIFont fontWithName:@"Arial-BoldItalicMT" size:18.0f]];
-    [leftLable setText:title];
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:leftLable];
-    
-    [self.navigationItem setLeftBarButtonItem:leftItem];
-}
-
 - (void)setRightBarButtonWithImage:(UIImage *)image {
     UIBarButtonItem *rightItem = [UIBarButtonItem itemWithImage:image target:self action:@selector(onRightButtonAction:)];
     [self.navigationItem setRightBarButtonItem:rightItem];
@@ -259,6 +248,11 @@
 - (void)setRightBarButtonWithTitle:(NSString *)title {
     UIBarButtonItem *rightItem = [UIBarButtonItem itemWithTitle:title target:self action:@selector(onRightButtonAction:)];
     [self.navigationItem setRightBarButtonItem:rightItem];
+}
+
+- (void)setLeftBarButtonWithTitle:(NSString *)title {
+    UIBarButtonItem *leftItem = [UIBarButtonItem itemWithTitle:title target:self action:@selector(onLeftButtonAction:)];
+    [self.navigationItem setLeftBarButtonItem:leftItem];
 }
 
 - (void)setRightBarButtonWithCustomView:(UIView *)customView {
