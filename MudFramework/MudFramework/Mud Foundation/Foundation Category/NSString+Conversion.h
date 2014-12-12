@@ -59,6 +59,15 @@
  */
 + (NSString *)sizeToString:(uint64_t)size;
 
+/**
+ *  html 转纯文本
+ *
+ *  @param html html文本
+ *
+ *  @return 纯文本
+ */
++(NSString *)stringByFilterHTML:(NSString *)html;
+
 @end
 
 @interface NSString (Empty)
