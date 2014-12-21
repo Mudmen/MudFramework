@@ -13,7 +13,7 @@
 #import "UIColor+Extension.h"
 
 @interface MudViewController () <UIAlertViewDelegate>
-
+@property (nonatomic,retain) UILabel *titleLabel;
 @end
 
 @implementation MudViewController
@@ -106,6 +106,7 @@
         //  NSLog(@"View controller was popped");
     }
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -226,36 +227,43 @@
 @implementation MudViewController (UIBarButtonItem)
 
 - (void)setBackBarButtonWithImage:(UIImage *)image {
+    self.navigationItem.leftBarButtonItem = nil;
     UIBarButtonItem *backItem = [UIBarButtonItem itemWithImage:image target:self action:@selector(onBackButtonAction:)];
     [self.navigationItem setLeftBarButtonItem:backItem];
 }
 
 - (void)setBackBarButtonWithCustomView:(UIView *)customView {
+    self.navigationItem.leftBarButtonItem = nil;
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:customView];
     [self.navigationItem setLeftBarButtonItem:backItem];
 }
 
 - (void)setLeftBarButtonWithImage:(UIImage *)image {
+    self.navigationItem.leftBarButtonItem = nil;
     UIBarButtonItem *backItem = [UIBarButtonItem itemWithImage:image target:self action:@selector(onLeftButtonAction:)];
     [self.navigationItem setLeftBarButtonItem:backItem];
 }
 
 - (void)setRightBarButtonWithImage:(UIImage *)image {
+    self.navigationItem.rightBarButtonItem = nil;
     UIBarButtonItem *rightItem = [UIBarButtonItem itemWithImage:image target:self action:@selector(onRightButtonAction:)];
     [self.navigationItem setRightBarButtonItem:rightItem];
 }
 
 - (void)setRightBarButtonWithTitle:(NSString *)title {
+    self.navigationItem.rightBarButtonItem = nil;
     UIBarButtonItem *rightItem = [UIBarButtonItem itemWithTitle:title target:self action:@selector(onRightButtonAction:)];
     [self.navigationItem setRightBarButtonItem:rightItem];
 }
 
 - (void)setLeftBarButtonWithTitle:(NSString *)title {
+    self.navigationItem.leftBarButtonItem = nil;
     UIBarButtonItem *leftItem = [UIBarButtonItem itemWithTitle:title target:self action:@selector(onLeftButtonAction:)];
     [self.navigationItem setLeftBarButtonItem:leftItem];
 }
 
 - (void)setRightBarButtonWithCustomView:(UIView *)customView {
+    self.navigationItem.rightBarButtonItem = nil;
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:customView];
     [self.navigationItem setRightBarButtonItem:backItem];
 }

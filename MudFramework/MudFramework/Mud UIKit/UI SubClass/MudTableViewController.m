@@ -13,7 +13,7 @@
 #import "UIColor+Extension.h"
 
 @interface MudTableViewController ()
-
+@property (nonatomic,retain) UILabel *titleLabel;
 @end
 
 @implementation MudTableViewController

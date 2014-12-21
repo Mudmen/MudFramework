@@ -11,7 +11,6 @@
 @implementation UIBarButtonItem (Extension)
 
 + (UIBarButtonItem *)itemWithImage:(UIImage*)image target:(id)target action:(SEL)action {
-    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, 44, 44);
     [button setImage:image forState:UIControlStateNormal];

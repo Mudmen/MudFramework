@@ -19,7 +19,6 @@
 - (void)refreshView;
 - (void)initData;
 - (void)refreshData;
-
 //相当于self.navigationviewcontroller push的功能
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
 - (void)popViewControllerAnimated:(BOOL)animated;

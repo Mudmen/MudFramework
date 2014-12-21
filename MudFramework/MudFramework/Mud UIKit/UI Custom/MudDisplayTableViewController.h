@@ -17,7 +17,6 @@
 - (void)refreshView;
 - (void)initData;
 - (void)refreshData;
-
 - (BOOL)isSearchResultsTableView:(UITableView *)tableView;
 
 //相当于self.navigationviewcontroller push的功能
