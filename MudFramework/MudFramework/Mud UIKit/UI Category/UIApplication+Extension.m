@@ -30,7 +30,7 @@
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
     NSString *currentVersion = [infoDic objectForKey:@"CFBundleVersion"];
     dispatch_async(dispatch_get_global_queue(-2, 0), ^{
-        NSString *URL = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@",appleid];//   661123089
+        NSString *URL = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@",appleid];  //661123089
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
         [request setURL:[NSURL URLWithString:URL]];
         [request setHTTPMethod:@"POST"];
@@ -39,8 +39,9 @@
         NSData *recervedData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:recervedData options:NSJSONReadingMutableContainers error:nil];
         NSArray *infoArray = [dic objectForKey:@"results"];
+        NSInteger resultCount = [[dic objectForKey:@"resultCount"] integerValue];
         dispatch_async(dispatch_get_main_queue(), ^{
-            if ([infoArray count]) {
+            if (infoArray && [infoArray count] > 0 && resultCount > 0) {
                 NSDictionary *releaseInfo = [infoArray objectAtIndex:0];
                 NSString *lastVersion = [releaseInfo objectForKey:@"version"];
                 __block NSURL *updateURL = [NSURL URLWithString:[releaseInfo objectForKey:@"trackViewUrl"]];

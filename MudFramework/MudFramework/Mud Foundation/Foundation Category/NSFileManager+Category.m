@@ -28,18 +28,39 @@
     //    return result;
 }
 
-- (uint64_t)folderSize:(NSString *)folderPath {
-    NSArray *filesArray = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:folderPath error:nil];
-    NSEnumerator *filesEnumerator = [filesArray objectEnumerator];
-    NSString *fileName;
-    uint64_t fileSize = 0;
-    
-    while (fileName = [filesEnumerator nextObject]) {
-        NSDictionary *fileDictionary = [[NSFileManager defaultManager] attributesOfFileSystemForPath:[folderPath stringByAppendingPathComponent:fileName] error:nil];
-        fileSize += [fileDictionary fileSize];
+//单位字节（Byte）
++ (NSNumber *)systemFreeSize {
+    NSString* path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] ;
+    NSFileManager* fileManager = [[NSFileManager alloc ]init];
+    NSDictionary *fileSysAttributes = [fileManager attributesOfFileSystemForPath:path error:nil];
+    NSNumber *freeSpace = [fileSysAttributes objectForKey:NSFileSystemFreeSize];
+    return freeSpace;
+}
+//剩余空间字符串，最小单位kB,最大单位G
++ (NSString *)stringForSystemFreeSize {
+    NSNumber *freeSpace = [NSFileManager systemFreeSize];
+    NSString  * str = nil;
+    if ([freeSpace longLongValue]/1024.f/1024.f/1024.f > 1) {
+        str = [NSString stringWithFormat:@"%0.2fGB",[freeSpace longLongValue]/1024.f/1024.f/1024.f];
+    } else if ([freeSpace longLongValue]/1024.f/1024.f > 1) {
+        str = [NSString stringWithFormat:@"%0.2fMB",[freeSpace longLongValue]/1024.f/1024.f];
+    } else if ([freeSpace longLongValue]/1024.f > 1) {
+        str = [NSString stringWithFormat:@"%0.2fKB",[freeSpace longLongValue]/1024.f];
+    } else {
+        str = @"0KB";
     }
-    
-    return fileSize;
+    return str;
+}
+
+
+- (NSNumber *)folderSize:(NSString *)folderPath {
+    NSArray *subPaths = [[NSFileManager defaultManager] subpathsAtPath:folderPath];
+    unsigned long long totalSize = 0;
+    for (NSString *path in subPaths) {
+        unsigned long long size = [[[NSFileManager defaultManager] attributesOfItemAtPath:path error:nil] fileSize];
+        totalSize += size;
+    }
+    return @(totalSize);
 }
 
 /**
@@ -50,8 +71,9 @@
  *  @return 大小
  */
 - (NSString *)stringFolderSize:(NSString *)folderPath {
-    uint64_t size = [self folderSize:folderPath];
+    NSNumber *sizeNum = [self folderSize:folderPath];
     NSString  * str = nil;
+    float size = [sizeNum floatValue];
     if (size/1024.f/1024.f/1024.f > 1) {
         str = [NSString stringWithFormat:@"%0.2fGB",size/1024.f/1024.f/1024.f];
     } else if (size/1024.f/1024.f > 1) {
@@ -64,24 +86,5 @@
     return str;
 }
 
--(uint64_t)getFreeDiskspace {
-    uint64_t totalSpace = 0;
-    uint64_t totalFreeSpace = 0;
-    NSError *error = nil;
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfFileSystemForPath:[paths lastObject] error: &error];
-    
-    if (dictionary) {
-        NSNumber *fileSystemSizeInBytes = [dictionary objectForKey: NSFileSystemSize];
-        NSNumber *freeFileSystemSizeInBytes = [dictionary objectForKey:NSFileSystemFreeSize];
-        totalSpace = [fileSystemSizeInBytes unsignedLongLongValue];
-        totalFreeSpace = [freeFileSystemSizeInBytes unsignedLongLongValue];
-//        NSLog(@"Memory Capacity of %llu MiB with %llu MiB Free memory available.", ((totalSpace/1024ll)/1024ll), ((totalFreeSpace/1024ll)/1024ll));
-    } else {
-//        NSLog(@"Error Obtaining System Memory Info: Domain = %@, Code = %@", [error domain], [error code]);
-    }
-    
-    return totalFreeSpace;
-}
 
 @end

@@ -12,7 +12,7 @@
 
 @interface UIDevice (OpenUDID)
 
-+ (NSString *)openUDID;
+//+ (NSString *)openUDID; 废弃
 
 + (NSString *)ADUDID;
 

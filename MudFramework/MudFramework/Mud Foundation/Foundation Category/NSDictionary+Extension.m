@@ -19,6 +19,9 @@
     if ([value isKindOfClass:[NSString class]]) {
         return value;
     }
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return [NSString stringWithFormat:@"%@",value];
+    }
     
     return nil;
 }
