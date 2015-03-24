@@ -67,7 +67,7 @@
 - (void)addResponder:(id)responder {
     @synchronized(responders) {
         for (ResponderObject *obj in responders) {
-            if (obj.object == responders) {
+            if (obj.object == responder) {
                 return;
             }
         }
@@ -81,7 +81,7 @@
 - (void)removeResponder:(id)responder{
     @synchronized(responders) {
         for (ResponderObject *obj in responders) {
-            if (obj.object == responders) {
+            if (obj.object == responder) {
                 [responders removeObject:obj];
                 break;
             }
